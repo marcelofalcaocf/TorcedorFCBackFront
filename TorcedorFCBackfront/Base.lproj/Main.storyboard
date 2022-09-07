@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V50-Eg-z6e">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -66,24 +66,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Está mais perto de ser um Torcedor de carteirinha, preencha os campos abaixo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
-                                <rect key="frame" x="30" y="166" width="354" height="21"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Está mais perto de ser um Torcedor de carteirinha, preencha os campos abaixo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
+                                <rect key="frame" x="30" y="214" width="354" height="36"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1U-Lk-M1n">
+                                <rect key="frame" x="30" y="300" width="354" height="34"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCZ-UJ-gBP">
+                                <rect key="frame" x="30" y="359" width="354" height="34"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6uO-FX-zcZ">
+                                <rect key="frame" x="30" y="418" width="354" height="34"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-Ej-v8D">
+                                <rect key="frame" x="30" y="477" width="354" height="34"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-2M-osb">
+                                <rect key="frame" x="30" y="561" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastrar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGF-zS-pTx">
+                                <rect key="frame" x="65" y="755" width="146.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça seu login!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQI-R7-sek">
+                                <rect key="frame" x="218.5" y="755" width="130.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z2v-NS-FTi"/>
                         <color key="backgroundColor" red="0.4352940917" green="0.66666668650000005" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="E1U-Lk-M1n" secondAttribute="trailing" constant="30" id="34w-3U-0Rr"/>
+                            <constraint firstItem="sGF-zS-pTx" firstAttribute="top" secondItem="MTH-2M-osb" secondAttribute="bottom" constant="150" id="4zy-D0-Q8K"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="hCZ-UJ-gBP" secondAttribute="trailing" constant="30" id="AD5-75-Nny"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="MTH-2M-osb" secondAttribute="trailing" constant="30" id="CGM-Vt-5Ts"/>
+                            <constraint firstItem="6uO-FX-zcZ" firstAttribute="top" secondItem="hCZ-UJ-gBP" secondAttribute="bottom" constant="25" id="FIZ-eK-YQP"/>
+                            <constraint firstItem="hQI-R7-sek" firstAttribute="top" secondItem="MTH-2M-osb" secondAttribute="bottom" constant="150" id="HyS-cc-0j8"/>
+                            <constraint firstItem="MTH-2M-osb" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="L3N-hk-26g"/>
                             <constraint firstItem="hqK-XN-7S0" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="Mc2-WX-F65"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="hQI-R7-sek" secondAttribute="trailing" constant="65" id="NJF-mx-aGk"/>
+                            <constraint firstItem="E1U-Lk-M1n" firstAttribute="top" secondItem="hqK-XN-7S0" secondAttribute="bottom" constant="50" id="R12-ZW-qtb"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="6uO-FX-zcZ" secondAttribute="trailing" constant="30" id="SMZ-PS-0vt"/>
+                            <constraint firstItem="6uO-FX-zcZ" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="W9n-pl-9h9"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="StZ-Ej-v8D" secondAttribute="trailing" constant="30" id="XYG-hc-Q8t"/>
+                            <constraint firstItem="hCZ-UJ-gBP" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="Zmu-zK-6hX"/>
                             <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="hqK-XN-7S0" secondAttribute="trailing" constant="30" id="dQ2-Kr-zsR"/>
+                            <constraint firstItem="hqK-XN-7S0" firstAttribute="top" secondItem="Z2v-NS-FTi" secondAttribute="top" constant="170" id="hDN-co-hKN"/>
+                            <constraint firstItem="sGF-zS-pTx" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="65" id="iIb-b2-S1W"/>
+                            <constraint firstItem="MTH-2M-osb" firstAttribute="top" secondItem="StZ-Ej-v8D" secondAttribute="bottom" constant="50" id="nnl-Xf-esX"/>
+                            <constraint firstItem="StZ-Ej-v8D" firstAttribute="top" secondItem="6uO-FX-zcZ" secondAttribute="bottom" constant="25" id="qmp-Xj-ASI"/>
+                            <constraint firstItem="StZ-Ej-v8D" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="sBD-0h-5b9"/>
+                            <constraint firstItem="E1U-Lk-M1n" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="tVd-7j-pZv"/>
+                            <constraint firstItem="hCZ-UJ-gBP" firstAttribute="top" secondItem="E1U-Lk-M1n" secondAttribute="bottom" constant="25" id="yVw-74-nwW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxJ-PY-Y4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-1651"/>
+            <point key="canvasLocation" x="1444.9275362318842" y="-1651.3392857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tlx-If-iDR">
