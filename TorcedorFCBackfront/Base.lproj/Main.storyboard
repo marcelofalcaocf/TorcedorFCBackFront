@@ -20,13 +20,13 @@
                                 <rect key="frame" x="30" y="275" width="354" height="34"/>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-LQ-k9j">
                                 <rect key="frame" x="30" y="339" width="354" height="34"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu a senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ION-3v-epf">
@@ -61,18 +61,6 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.2627450980392157" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nao possui conta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYg-W3-kJR">
-                                <rect key="frame" x="80" y="643" width="131" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGZ-EK-ldp">
-                                <rect key="frame" x="249" y="643" width="85" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.12549019610000001" green="0.16862745100000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-sX-Iu4">
                                 <rect key="frame" x="107" y="553" width="100" height="60"/>
                                 <constraints>
@@ -96,30 +84,35 @@
                                     <constraint firstAttribute="height" constant="150" id="lXy-7Y-4Kb"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta? Faça seu login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-83-IQq">
+                                <rect key="frame" x="30" y="643" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UCt-sC-Ryr"/>
                         <color key="backgroundColor" red="0.4352940917" green="0.66666668650000005" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="ION-3v-epf" secondAttribute="trailing" constant="30" id="2ub-bN-o5K"/>
-                            <constraint firstItem="qYg-W3-kJR" firstAttribute="top" secondItem="Xhf-sX-Iu4" secondAttribute="bottom" constant="30" id="7hB-vr-Cza"/>
+                            <constraint firstItem="S0U-83-IQq" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="30" id="40l-Yp-vRI"/>
                             <constraint firstItem="WJC-fI-6To" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="30" id="9nT-b2-dsQ"/>
                             <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="7JR-LQ-k9j" secondAttribute="trailing" constant="30" id="DBA-79-Im2"/>
                             <constraint firstItem="Xhf-sX-Iu4" firstAttribute="centerX" secondItem="2gL-dF-rt1" secondAttribute="centerX" constant="-50" id="DUR-G7-HIb"/>
                             <constraint firstItem="7JR-LQ-k9j" firstAttribute="top" secondItem="WJC-fI-6To" secondAttribute="bottom" constant="30" id="EQt-y5-7dJ"/>
                             <constraint firstItem="ION-3v-epf" firstAttribute="top" secondItem="7JR-LQ-k9j" secondAttribute="bottom" constant="10" id="HMZ-vT-In5"/>
-                            <constraint firstItem="qYg-W3-kJR" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="80" id="LS2-fM-Gs5"/>
                             <constraint firstItem="WJC-fI-6To" firstAttribute="top" secondItem="Uz2-l7-aI6" secondAttribute="bottom" constant="15" id="Mz6-OH-ZhN"/>
                             <constraint firstItem="0CG-hh-YjT" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="30" id="OBt-tY-eCX"/>
-                            <constraint firstItem="AGZ-EK-ldp" firstAttribute="top" secondItem="48r-rX-766" secondAttribute="bottom" constant="30" id="Poa-f7-0lX"/>
                             <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="WJC-fI-6To" secondAttribute="trailing" constant="30" id="TbE-zf-8I3"/>
+                            <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="S0U-83-IQq" secondAttribute="trailing" constant="30" id="TwC-H3-KnP"/>
                             <constraint firstItem="48r-rX-766" firstAttribute="top" secondItem="ofo-bZ-dhM" secondAttribute="bottom" constant="30" id="U9E-Xc-iyc"/>
+                            <constraint firstItem="S0U-83-IQq" firstAttribute="top" secondItem="Xhf-sX-Iu4" secondAttribute="bottom" constant="30" id="X16-xH-t3m"/>
                             <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="0CG-hh-YjT" secondAttribute="trailing" constant="30" id="X5F-g6-l1E"/>
                             <constraint firstItem="ofo-bZ-dhM" firstAttribute="centerX" secondItem="2gL-dF-rt1" secondAttribute="centerX" id="XaD-xa-fwf"/>
                             <constraint firstItem="Uz2-l7-aI6" firstAttribute="top" secondItem="YQr-Hu-BNG" secondAttribute="bottom" constant="15" id="b1O-6y-iAV"/>
                             <constraint firstItem="7JR-LQ-k9j" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="30" id="box-L5-SnQ"/>
                             <constraint firstItem="48r-rX-766" firstAttribute="centerX" secondItem="2gL-dF-rt1" secondAttribute="centerX" constant="50" id="e81-as-NQM"/>
                             <constraint firstItem="Uz2-l7-aI6" firstAttribute="leading" secondItem="UCt-sC-Ryr" secondAttribute="leading" constant="30" id="f6C-J5-n0K"/>
-                            <constraint firstItem="UCt-sC-Ryr" firstAttribute="trailing" secondItem="AGZ-EK-ldp" secondAttribute="trailing" constant="80" id="gfi-CS-fYc"/>
                             <constraint firstItem="YQr-Hu-BNG" firstAttribute="top" secondItem="UCt-sC-Ryr" secondAttribute="top" constant="15" id="iju-iO-0uT"/>
                             <constraint firstItem="0CG-hh-YjT" firstAttribute="top" secondItem="ION-3v-epf" secondAttribute="bottom" constant="30" id="lH6-pk-qNi"/>
                             <constraint firstItem="ofo-bZ-dhM" firstAttribute="top" secondItem="0CG-hh-YjT" secondAttribute="bottom" constant="30" id="mTs-fo-GIP"/>
