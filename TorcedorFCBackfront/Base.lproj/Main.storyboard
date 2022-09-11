@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V50-Eg-z6e">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-g8-Ick">
@@ -48,7 +48,7 @@
             <objects>
                 <viewController id="Qvy-d3-bMo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s4V-5o-EyD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MC7-aH-TwO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -63,34 +63,78 @@
             <objects>
                 <viewController id="V50-Eg-z6e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igP-7t-cjf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Está mais perto de ser um Torcedor de carteirinha, preencha os campos abaixo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
-                                <rect key="frame" x="30" y="166" width="354" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="PHy-CK-Zbp">
+                                <rect key="frame" x="139" y="59" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7OB-fc-wjG"/>
+                                    <constraint firstAttribute="height" constant="150" id="wjP-MO-19G"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para recuperar sua senha, preencha o campo de texto abaixo com seu e-mail cadastrado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
+                                <rect key="frame" x="30" y="224" width="368" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-LE-UL7">
+                                <rect key="frame" x="30" y="294.66666666666669" width="368" height="34"/>
+                                <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-Qd-GNe">
+                                <rect key="frame" x="30" y="358.66666666666669" width="368" height="31"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Enviar"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta? Faça seu login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-Sc-CIj">
+                                <rect key="frame" x="30" y="419.66666666666669" width="368" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z2v-NS-FTi"/>
                         <color key="backgroundColor" red="0.4352940917" green="0.66666668650000005" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hqK-XN-7S0" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="Mc2-WX-F65"/>
-                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="hqK-XN-7S0" secondAttribute="trailing" constant="30" id="dQ2-Kr-zsR"/>
+                            <constraint firstItem="hqK-XN-7S0" firstAttribute="top" secondItem="PHy-CK-Zbp" secondAttribute="bottom" constant="15" id="0Kv-0b-0Z9"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="hqK-XN-7S0" secondAttribute="trailing" constant="30" id="1x7-OE-sLY"/>
+                            <constraint firstItem="nQ4-Qd-GNe" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="DrJ-hz-tMd"/>
+                            <constraint firstItem="hqK-XN-7S0" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="JW8-sE-1zm"/>
+                            <constraint firstItem="PHy-CK-Zbp" firstAttribute="top" secondItem="Z2v-NS-FTi" secondAttribute="top" constant="15" id="MPZ-KN-Oic"/>
+                            <constraint firstItem="Wpr-Sc-CIj" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="Riq-VG-FCh"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="DxM-LE-UL7" secondAttribute="trailing" constant="30" id="UJ7-4W-W1y"/>
+                            <constraint firstItem="DxM-LE-UL7" firstAttribute="leading" secondItem="Z2v-NS-FTi" secondAttribute="leading" constant="30" id="VE1-7I-Awz"/>
+                            <constraint firstAttribute="trailing" secondItem="Wpr-Sc-CIj" secondAttribute="trailing" constant="30" id="VLf-EE-ceE"/>
+                            <constraint firstItem="PHy-CK-Zbp" firstAttribute="centerX" secondItem="igP-7t-cjf" secondAttribute="centerX" id="dSz-Ih-XlO"/>
+                            <constraint firstItem="DxM-LE-UL7" firstAttribute="top" secondItem="hqK-XN-7S0" secondAttribute="bottom" constant="30" id="dXT-P4-TM2"/>
+                            <constraint firstItem="Z2v-NS-FTi" firstAttribute="trailing" secondItem="nQ4-Qd-GNe" secondAttribute="trailing" constant="30" id="dxj-YM-Qap"/>
+                            <constraint firstItem="nQ4-Qd-GNe" firstAttribute="top" secondItem="DxM-LE-UL7" secondAttribute="bottom" constant="30" id="imy-vY-u5V"/>
+                            <constraint firstItem="Wpr-Sc-CIj" firstAttribute="top" secondItem="nQ4-Qd-GNe" secondAttribute="bottom" constant="30" id="lhF-we-RDf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxJ-PY-Y4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-1651"/>
+            <point key="canvasLocation" x="1444.9275362318842" y="-1651.3392857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tlx-If-iDR">
             <objects>
                 <viewController id="lh1-3J-0zQ" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="diR-c8-kNQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9P-xm-KpU">
@@ -125,7 +169,7 @@
             <objects>
                 <viewController id="9Ac-aM-Osf" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x8J-7w-frW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-0L-sUe">
@@ -160,6 +204,9 @@
         <image name="1" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
