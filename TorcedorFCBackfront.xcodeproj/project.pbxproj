@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */; };
 		14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */; };
-		14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7F28BCFFC300C34A6E /* ViewController.swift */; };
+		14C23D8028BCFFC300C34A6E /* FasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7F28BCFFC300C34A6E /* FasesViewController.swift */; };
 		14C23D8328BCFFC300C34A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C23D8128BCFFC300C34A6E /* Main.storyboard */; };
 		14C23D8628BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D8428BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodeld */; };
 		14C23D8828BCFFC500C34A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C23D8728BCFFC500C34A6E /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		14C23D9628BCFFC600C34A6E /* TorcedorFCBackfrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D9528BCFFC600C34A6E /* TorcedorFCBackfrontTests.swift */; };
 		14C23DA028BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D9F28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift */; };
 		14C23DA228BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23DA128BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift */; };
+		D1382AAE28D112040020F0EC /* TableBrasileiraoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1382AAD28D112040020F0EC /* TableBrasileiraoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		14C23D7828BCFFC300C34A6E /* TorcedorFCBackfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorcedorFCBackfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14C23D7F28BCFFC300C34A6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14C23D7F28BCFFC300C34A6E /* FasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FasesViewController.swift; sourceTree = "<group>"; };
 		14C23D8228BCFFC300C34A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14C23D8528BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TorcedorFCBackfront.xcdatamodel; sourceTree = "<group>"; };
 		14C23D8728BCFFC500C34A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		14C23D9B28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorcedorFCBackfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C23D9F28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorcedorFCBackfrontUITests.swift; sourceTree = "<group>"; };
 		14C23DA128BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorcedorFCBackfrontUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1382AAD28D112040020F0EC /* TableBrasileiraoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBrasileiraoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 			children = (
 				14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */,
 				14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */,
-				14C23D7F28BCFFC300C34A6E /* ViewController.swift */,
+				14C23D7F28BCFFC300C34A6E /* FasesViewController.swift */,
+				D1382AAD28D112040020F0EC /* TableBrasileiraoViewController.swift */,
 				14C23D8128BCFFC300C34A6E /* Main.storyboard */,
 				14C23D8728BCFFC500C34A6E /* Assets.xcassets */,
 				14C23D8928BCFFC500C34A6E /* LaunchScreen.storyboard */,
@@ -261,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */,
+				14C23D8028BCFFC300C34A6E /* FasesViewController.swift in Sources */,
+				D1382AAE28D112040020F0EC /* TableBrasileiraoViewController.swift in Sources */,
 				14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */,
 				14C23D8628BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodeld in Sources */,
 				14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */,
@@ -441,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUJ28KYKT3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TorcedorFCBackfront/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -468,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUJ28KYKT3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TorcedorFCBackfront/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
