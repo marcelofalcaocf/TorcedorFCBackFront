@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144F2B4528D8E680001AE671 /* Tela1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B4428D8E680001AE671 /* Tela1ViewController.swift */; };
 		14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */; };
 		14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */; };
 		14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7F28BCFFC300C34A6E /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144F2B4428D8E680001AE671 /* Tela1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela1ViewController.swift; sourceTree = "<group>"; };
 		14C23D7828BCFFC300C34A6E /* TorcedorFCBackfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorcedorFCBackfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */,
 				14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */,
 				14C23D7F28BCFFC300C34A6E /* ViewController.swift */,
+				144F2B4428D8E680001AE671 /* Tela1ViewController.swift */,
 				14C23D8128BCFFC300C34A6E /* Main.storyboard */,
 				14C23D8728BCFFC500C34A6E /* Assets.xcassets */,
 				14C23D8928BCFFC500C34A6E /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */,
+				144F2B4528D8E680001AE671 /* Tela1ViewController.swift in Sources */,
 				14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */,
 				14C23D8628BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodeld in Sources */,
 				14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */,

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OwM-mU-OrG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OwM-mU-OrG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,26 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-fI-6To">
-                                <rect key="frame" x="30" y="275" width="354" height="34"/>
+                                <rect key="frame" x="30" y="279" width="354" height="34"/>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-LQ-k9j">
-                                <rect key="frame" x="30" y="339" width="354" height="34"/>
+                                <rect key="frame" x="30" y="343" width="354" height="34"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu a senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ION-3v-epf">
-                                <rect key="frame" x="252" y="383" width="132" height="18"/>
+                                <rect key="frame" x="252" y="387" width="132" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-hh-YjT">
-                                <rect key="frame" x="30" y="431" width="354" height="44"/>
+                                <rect key="frame" x="30" y="435" width="354" height="44"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -50,19 +51,19 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu aplicativo para ficar ligado no mundo do futebol!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-l7-aI6">
-                                <rect key="frame" x="30" y="224" width="354" height="36"/>
+                                <rect key="frame" x="30" y="228" width="354" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofo-bZ-dhM">
-                                <rect key="frame" x="196" y="505" width="22.5" height="18"/>
+                                <rect key="frame" x="196" y="509" width="22.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.2627450980392157" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-sX-Iu4">
-                                <rect key="frame" x="107" y="553" width="100" height="60"/>
+                                <rect key="frame" x="107" y="557" width="100" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="huP-U7-Y24"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="sfH-44-Yrm"/>
@@ -70,7 +71,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="48r-rX-766">
-                                <rect key="frame" x="207" y="553" width="100" height="60"/>
+                                <rect key="frame" x="207" y="557" width="100" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Og3-r8-wa7"/>
                                     <constraint firstAttribute="height" constant="60" id="xb7-rm-Cwz"/>
@@ -78,14 +79,14 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="YQr-Hu-BNG">
-                                <rect key="frame" x="132" y="59" width="150" height="150"/>
+                                <rect key="frame" x="132" y="63" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="b2Q-SX-gyj"/>
                                     <constraint firstAttribute="height" constant="150" id="lXy-7Y-4Kb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta? Faça seu login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-83-IQq">
-                                <rect key="frame" x="30" y="643" width="354" height="21"/>
+                                <rect key="frame" x="30" y="647" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -131,7 +132,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-g8-Ick">
@@ -166,7 +167,7 @@
             <objects>
                 <viewController id="Qvy-d3-bMo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s4V-5o-EyD">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MC7-aH-TwO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,31 +182,31 @@
             <objects>
                 <viewController id="V50-Eg-z6e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igP-7t-cjf">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="PHy-CK-Zbp">
-                                <rect key="frame" x="139" y="59" width="150" height="150"/>
+                                <rect key="frame" x="132" y="63" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="7OB-fc-wjG"/>
                                     <constraint firstAttribute="height" constant="150" id="wjP-MO-19G"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para recuperar sua senha, preencha o campo de texto abaixo com seu email cadastrado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
-                                <rect key="frame" x="30" y="224" width="368" height="40.666666666666686"/>
+                                <rect key="frame" x="30" y="228" width="354" height="41"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-LE-UL7">
-                                <rect key="frame" x="30" y="294.66666666666669" width="368" height="34"/>
+                                <rect key="frame" x="30" y="299" width="354" height="34"/>
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-Qd-GNe">
-                                <rect key="frame" x="30" y="358.66666666666669" width="368" height="44"/>
+                                <rect key="frame" x="30" y="363" width="354" height="44"/>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -219,7 +220,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta? Faça seu login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-Sc-CIj">
-                                <rect key="frame" x="30" y="432.66666666666669" width="368" height="21"/>
+                                <rect key="frame" x="30" y="437" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -254,7 +255,7 @@
             <objects>
                 <viewController id="lh1-3J-0zQ" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="diR-c8-kNQ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9P-xm-KpU">
@@ -289,7 +290,7 @@
             <objects>
                 <viewController id="9Ac-aM-Osf" customClass="ViewController" customModule="TorcedorFCBackfront" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x8J-7w-frW">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-0L-sUe">
@@ -319,11 +320,122 @@
             </objects>
             <point key="canvasLocation" x="1586" y="96"/>
         </scene>
+        <!--Tela1 View Controller-->
+        <scene sceneID="jeV-rH-ZIR">
+            <objects>
+                <viewController id="slb-Ri-5Sb" customClass="Tela1ViewController" customModule="projectAppFutebol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Lg-Pl-oLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NLb-NZ-dGv"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.26274509800000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="7NZ-2r-w31">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pas-h4-gyh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="984"/>
+        </scene>
+        <!--Tela4 View Controller-->
+        <scene sceneID="3Rh-Pa-dNA">
+            <objects>
+                <viewController id="JlV-bF-RXG" customClass="Tela4ViewController" customModule="projectAppFutebol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nfh-6s-Eyl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Iv2-xE-c8G"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.26274509800000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="6nG-NJ-44G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jT-hu-p9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="1685"/>
+        </scene>
+        <!--Tela5 View Controller-->
+        <scene sceneID="6yR-ZM-XJp">
+            <objects>
+                <viewController id="Xad-cX-G1L" customClass="Tela5ViewController" customModule="projectAppFutebol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vbo-QM-MK8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kU8-3J-Saf"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.26274509800000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="A8e-25-DaZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PoM-ML-wab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="1408"/>
+        </scene>
+        <!--Tela3 View Controller-->
+        <scene sceneID="NnI-uU-Bbm">
+            <objects>
+                <viewController id="fiA-Uf-5ZY" customClass="Tela3ViewController" customModule="projectAppFutebol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1qq-Jl-7RW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yj7-VZ-90f"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.26274509800000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="list.bullet.circle.fill" catalog="system" id="AFF-T6-DY0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQZ-go-YSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="984"/>
+        </scene>
+        <!--Tela2 View Controller-->
+        <scene sceneID="Wfp-hd-Ygx">
+            <objects>
+                <viewController id="jM2-Uv-tvd" customClass="Tela2ViewController" customModule="projectAppFutebol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Py-70-Jrj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bkD-Sa-5K3"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.26274509800000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="clock.fill" catalog="system" id="RGs-Kl-xwK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDI-bJ-bf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="1685"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WDc-Ij-ZtM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="N5i-Qx-9dD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SRD-rW-hyL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.16862745100000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="slb-Ri-5Sb" kind="relationship" relationship="viewControllers" id="X6L-Wx-YtW"/>
+                        <segue destination="jM2-Uv-tvd" kind="relationship" relationship="viewControllers" id="2a9-mK-dZV"/>
+                        <segue destination="fiA-Uf-5ZY" kind="relationship" relationship="viewControllers" id="ONF-YQ-aQ1"/>
+                        <segue destination="JlV-bF-RXG" kind="relationship" relationship="viewControllers" id="7Qe-jn-ylN"/>
+                        <segue destination="Xad-cX-G1L" kind="relationship" relationship="viewControllers" id="SCT-lL-tYA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dh0-rQ-8Ly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="1213"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1" width="500" height="500"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
         <image name="facebook" width="67" height="67"/>
         <image name="google" width="67" height="67"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
