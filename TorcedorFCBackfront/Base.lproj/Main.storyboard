@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tsp-4s-cg0">
             <objects>
-                <viewController id="OwM-mU-OrG" sceneMemberID="viewController">
+                <viewController id="OwM-mU-OrG" userLabel="Login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gL-dF-rt1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,36 +177,52 @@
             </objects>
             <point key="canvasLocation" x="813" y="-608"/>
         </scene>
-        <!--View Controller-->
+        <!--RecuperarSenha-->
         <scene sceneID="lYQ-ZX-yBi">
             <objects>
-                <viewController id="V50-Eg-z6e" sceneMemberID="viewController">
+                <viewController id="V50-Eg-z6e" userLabel="RecuperarSenha" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igP-7t-cjf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="PHy-CK-Zbp">
+<<<<<<< HEAD
                                 <rect key="frame" x="132" y="63" width="150" height="150"/>
+=======
+                                <rect key="frame" x="132" y="59" width="150" height="150"/>
+>>>>>>> 0946a7b35aedb86c8bd6bc745568ab904c34e9e9
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="7OB-fc-wjG"/>
                                     <constraint firstAttribute="height" constant="150" id="wjP-MO-19G"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para recuperar sua senha, preencha o campo de texto abaixo com seu email cadastrado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-XN-7S0">
+<<<<<<< HEAD
                                 <rect key="frame" x="30" y="228" width="354" height="41"/>
+=======
+                                <rect key="frame" x="30" y="224" width="354" height="41"/>
+>>>>>>> 0946a7b35aedb86c8bd6bc745568ab904c34e9e9
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-LE-UL7">
+<<<<<<< HEAD
                                 <rect key="frame" x="30" y="299" width="354" height="34"/>
+=======
+                                <rect key="frame" x="30" y="295" width="354" height="34"/>
+>>>>>>> 0946a7b35aedb86c8bd6bc745568ab904c34e9e9
                                 <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-Qd-GNe">
+<<<<<<< HEAD
                                 <rect key="frame" x="30" y="363" width="354" height="44"/>
+=======
+                                <rect key="frame" x="30" y="359" width="354" height="44"/>
+>>>>>>> 0946a7b35aedb86c8bd6bc745568ab904c34e9e9
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.22352941176470587" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -220,7 +236,11 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Já possui conta? Faça seu login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-Sc-CIj">
+<<<<<<< HEAD
                                 <rect key="frame" x="30" y="437" width="354" height="21"/>
+=======
+                                <rect key="frame" x="30" y="433" width="354" height="21"/>
+>>>>>>> 0946a7b35aedb86c8bd6bc745568ab904c34e9e9
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.22352941179999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -248,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxJ-PY-Y4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="-1651.3392857142856"/>
+            <point key="canvasLocation" x="2386" y="-608"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tlx-If-iDR">
