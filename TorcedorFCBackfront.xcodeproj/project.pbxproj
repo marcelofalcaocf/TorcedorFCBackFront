@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144F2B4528D8E680001AE671 /* Tela1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B4428D8E680001AE671 /* Tela1ViewController.swift */; };
 		14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */; };
 		14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */; };
 		14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D7F28BCFFC300C34A6E /* ViewController.swift */; };
@@ -18,6 +17,11 @@
 		14C23D9628BCFFC600C34A6E /* TorcedorFCBackfrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D9528BCFFC600C34A6E /* TorcedorFCBackfrontTests.swift */; };
 		14C23DA028BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D9F28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift */; };
 		14C23DA228BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23DA128BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift */; };
+		14E7E7A928DA2BDD00CF2F6A /* Tela1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7A828DA2BDD00CF2F6A /* Tela1ViewController.swift */; };
+		14E7E7AB28DA2BF200CF2F6A /* Tela2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7AA28DA2BF200CF2F6A /* Tela2ViewController.swift */; };
+		14E7E7AD28DA2BF700CF2F6A /* Tela3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7AC28DA2BF700CF2F6A /* Tela3ViewController.swift */; };
+		14E7E7AF28DA2BFD00CF2F6A /* Tela4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7AE28DA2BFC00CF2F6A /* Tela4ViewController.swift */; };
+		14E7E7B128DA2C5900CF2F6A /* Tela5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7B028DA2C5900CF2F6A /* Tela5ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		144F2B4428D8E680001AE671 /* Tela1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela1ViewController.swift; sourceTree = "<group>"; };
 		14C23D7828BCFFC300C34A6E /* TorcedorFCBackfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorcedorFCBackfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		14C23D9B28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorcedorFCBackfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C23D9F28BCFFC600C34A6E /* TorcedorFCBackfrontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorcedorFCBackfrontUITests.swift; sourceTree = "<group>"; };
 		14C23DA128BCFFC600C34A6E /* TorcedorFCBackfrontUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorcedorFCBackfrontUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14E7E7A828DA2BDD00CF2F6A /* Tela1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela1ViewController.swift; sourceTree = "<group>"; };
+		14E7E7AA28DA2BF200CF2F6A /* Tela2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela2ViewController.swift; sourceTree = "<group>"; };
+		14E7E7AC28DA2BF700CF2F6A /* Tela3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela3ViewController.swift; sourceTree = "<group>"; };
+		14E7E7AE28DA2BFC00CF2F6A /* Tela4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela4ViewController.swift; sourceTree = "<group>"; };
+		14E7E7B028DA2C5900CF2F6A /* Tela5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela5ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +114,11 @@
 				14C23D7B28BCFFC300C34A6E /* AppDelegate.swift */,
 				14C23D7D28BCFFC300C34A6E /* SceneDelegate.swift */,
 				14C23D7F28BCFFC300C34A6E /* ViewController.swift */,
-				144F2B4428D8E680001AE671 /* Tela1ViewController.swift */,
+				14E7E7A828DA2BDD00CF2F6A /* Tela1ViewController.swift */,
+				14E7E7AA28DA2BF200CF2F6A /* Tela2ViewController.swift */,
+				14E7E7AC28DA2BF700CF2F6A /* Tela3ViewController.swift */,
+				14E7E7AE28DA2BFC00CF2F6A /* Tela4ViewController.swift */,
+				14E7E7B028DA2C5900CF2F6A /* Tela5ViewController.swift */,
 				14C23D8128BCFFC300C34A6E /* Main.storyboard */,
 				14C23D8728BCFFC500C34A6E /* Assets.xcassets */,
 				14C23D8928BCFFC500C34A6E /* LaunchScreen.storyboard */,
@@ -265,10 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C23D8028BCFFC300C34A6E /* ViewController.swift in Sources */,
-				144F2B4528D8E680001AE671 /* Tela1ViewController.swift in Sources */,
+				14E7E7B128DA2C5900CF2F6A /* Tela5ViewController.swift in Sources */,
+				14E7E7A928DA2BDD00CF2F6A /* Tela1ViewController.swift in Sources */,
 				14C23D7C28BCFFC300C34A6E /* AppDelegate.swift in Sources */,
 				14C23D8628BCFFC300C34A6E /* TorcedorFCBackfront.xcdatamodeld in Sources */,
 				14C23D7E28BCFFC300C34A6E /* SceneDelegate.swift in Sources */,
+				14E7E7AF28DA2BFD00CF2F6A /* Tela4ViewController.swift in Sources */,
+				14E7E7AB28DA2BF200CF2F6A /* Tela2ViewController.swift in Sources */,
+				14E7E7AD28DA2BF700CF2F6A /* Tela3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
