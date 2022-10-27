@@ -11,6 +11,10 @@ target 'TorcedorFC' do
 	pod 'DropDown' 
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'TinyConstraints', '~> 4.0.0'
+	pod 'FirebaseAnalytics'
+	pod 'FirebaseAuth'
+	pod 'FirebaseFirestore'
+
 end
 
 

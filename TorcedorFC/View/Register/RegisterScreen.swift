@@ -9,6 +9,7 @@ import UIKit
 
 protocol RegisterScreenProtocol: AnyObject {
     func actionBackButton()
+    func actionRegisterButton()
 }
 
 class RegisterScreen: UIView {
@@ -57,7 +58,6 @@ class RegisterScreen: UIView {
         textField.backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 0.40)
         textField.borderStyle = .roundedRect
         textField.keyboardType = .emailAddress
-        textField.isSecureTextEntry = true
         textField.placeholder = "E-mail"
         textField.textColor = .darkGray
         return textField
@@ -98,7 +98,7 @@ class RegisterScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0)
-        // button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.tappedRegisterButton), for: .touchUpInside)
         return button
     }()
     
@@ -142,10 +142,50 @@ class RegisterScreen: UIView {
         self.addSubview(self.backButton)
     }
     
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        self.nameTextField.delegate = delegate
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+        self.confirmPasswordTextField.delegate = delegate
+    }
+    
     @objc private func tappedBackButton() {
         self.delegate?.actionBackButton()
     }
     
+    @objc private func tappedRegisterButton() {
+        self.delegate?.actionRegisterButton()
+    }
+    
+    public func validaTextFields() {
+        let email: String = self.emailTextField.text ?? "" // sao opcionais
+        let password: String = self.passwordTextField.text ?? "" // sao opcionais
+        let confirmPassword: String = self.confirmPasswordTextField.text ?? ""
+        
+        if email != "" && password != "" && confirmPassword == password { // poderia colocar "if !email.isEmpty && !password.isEmpty {}
+            self.configButtonEnabel(true)
+        } else {
+            self.configButtonEnabel(false)
+        }
+    }
+    
+    private func configButtonEnabel(_ enabel: Bool) {
+        if enabel {
+            self.registerButton.setTitleColor(.white, for: .normal)
+            self.registerButton.isEnabled = true // permitido apertar o botao "isEnabled"
+        } else {
+            self.registerButton.setTitleColor(.lightGray, for: .normal)
+            self.registerButton.isEnabled = false // nao permitido apertar o botao
+        }
+    }
+    
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

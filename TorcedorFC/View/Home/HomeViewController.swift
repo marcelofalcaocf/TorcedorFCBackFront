@@ -24,6 +24,9 @@ class HomeViewController: UIViewController {
         viewModel.getCampeonatos()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }
 
 extension HomeViewController: HomeViewModelDelegate {

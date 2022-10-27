@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     let viewModel: HomeViewModel = .init()
+    var auth: Auth?
+    var alert:Alert?
     
     override func loadView() {
         self.loginScreen = LoginScreen()
@@ -20,9 +23,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loginScreen?.delegate(delegate: self)
+        loginScreen?.configTextFieldDelegate(delegate: self)
     
         viewModel.delegate(delegate: self)
         viewModel.getCampeonatos()
+        
+        auth = Auth.auth()
+        alert = Alert(controller: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,8 +40,24 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginScreenProtocol {
     func actionLoginButton() {
+        
+        
+        guard let login = self.loginScreen else { return }
         let vc: TabBarController = TabBarController()
-        self.navigationController?.pushViewController(vc, animated: true)
+
+        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
+            if error != nil {
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "Atenção dados incorretos, verifique e tente novamente")
+            }else {
+                if usuario == nil {
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema inesperado, tente novamente mais tarde")
+                } else {
+                    // self.alert?.getAlert(titulo: "Atenção", mensagem: "Parabens, usuario logado com sucesso!")
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        })
+
     }
     
     func actionForgotPasswordButton() {
@@ -51,13 +74,11 @@ extension LoginViewController: LoginScreenProtocol {
     }
     
     func actionRegisterPasswordButton() {
+        
         let vc: RegisterViewController = RegisterViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }
-
 
 extension LoginViewController: HomeViewModelDelegate {
     func success() {
@@ -66,5 +87,15 @@ extension LoginViewController: HomeViewModelDelegate {
     
     func error() {
         print("Deu ruim")
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.loginScreen?.validateTextFields()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }

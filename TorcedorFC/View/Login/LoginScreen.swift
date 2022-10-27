@@ -82,7 +82,7 @@ class LoginScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 25)
-        button.setTitleColor(.white , for: .normal)
+        button.setTitleColor(.darkGray , for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0) // azul escuro
@@ -163,6 +163,11 @@ class LoginScreen: UIView {
         self.addSubview(self.registerButton)
     }
     
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
     @objc private func tappedLoginButton() {
         self.delegate?.actionLoginButton()
     }
@@ -181,6 +186,35 @@ class LoginScreen: UIView {
     
     @objc private func tappedRegisterButton() {
         self.delegate?.actionRegisterPasswordButton()
+    }
+    
+    public func validateTextFields() {
+        let email: String = self.emailTextField.text ?? "" // sao opcionais
+        let password: String = self.passwordTextField.text ?? "" // sao opcionais
+
+        if email != "" && password != "" { // poderia colocar "if !email.isEmpty && !password.isEmpty {}
+            self.configButtonEnabel(true)
+        } else {
+            self.configButtonEnabel(false)
+        }
+    }
+    
+    private func configButtonEnabel(_ enabel: Bool) {
+        if enabel {
+            self.loginButton.setTitleColor(.white, for: .normal)
+            self.loginButton.isEnabled = true // permitido apertar o botao "isEnabled"
+        } else {
+            self.loginButton.setTitleColor(.darkGray, for: .normal)
+            self.loginButton.isEnabled = false // nao permitido apertar o botao
+        }
+    }
+    
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
     }
 
     required init?(coder: NSCoder) {
