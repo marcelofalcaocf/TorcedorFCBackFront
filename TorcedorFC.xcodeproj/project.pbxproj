@@ -20,6 +20,7 @@
 		142D5E5428C66756002BA5EC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D5E5328C66756002BA5EC /* GamesTableViewCell.swift */; };
 		144F2B4028D4D310001AE671 /* GameDaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B3F28D4D310001AE671 /* GameDaysCollectionViewCell.swift */; };
 		144F2B4228D4D321001AE671 /* GameDaysScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B4128D4D321001AE671 /* GameDaysScreen.swift */; };
+		14541CE5290AE63F00D329A9 /* GameBrazilsCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */; };
 		14C23D2F28B7C79A00C34A6E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */; };
 		14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3128B823DF00C34A6E /* HomeViewController.swift */; };
 		14C23D3528B83BB900C34A6E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3428B83BB900C34A6E /* RegisterViewController.swift */; };
@@ -54,7 +55,7 @@
 		14C5C82928B6AA2600300E6D /* TabelaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82828B6AA2600300E6D /* TabelaService.swift */; };
 		14C5C82B28B6AB1200300E6D /* TabelaBrasileiraoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */; };
 		14D7A51F2905B0310097A5AF /* BrazilsCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A51E2905B0310097A5AF /* BrazilsCup.swift */; };
-		14D7A5212905B0BF0097A5AF /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5202905B0BF0097A5AF /* Phase.swift */; };
+		14D7A5212905B0BF0097A5AF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5202905B0BF0097A5AF /* Game.swift */; };
 		14D7A5242905B6FD0097A5AF /* BrazilianTableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */; };
 		14D7A5262905B70E0097A5AF /* BrazilsCupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */; };
 		14D7A5282906D8990097A5AF /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */; };
@@ -111,6 +112,7 @@
 		142D5E5328C66756002BA5EC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		144F2B3F28D4D310001AE671 /* GameDaysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysCollectionViewCell.swift; sourceTree = "<group>"; };
 		144F2B4128D4D321001AE671 /* GameDaysScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysScreen.swift; sourceTree = "<group>"; };
+		14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrazilsCup.swift; sourceTree = "<group>"; };
 		14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		14C23D3128B823DF00C34A6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C23D3428B83BB900C34A6E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +151,7 @@
 		14C5C82828B6AA2600300E6D /* TabelaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaService.swift; sourceTree = "<group>"; };
 		14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaBrasileiraoModel.swift; sourceTree = "<group>"; };
 		14D7A51E2905B0310097A5AF /* BrazilsCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilsCup.swift; sourceTree = "<group>"; };
-		14D7A5202905B0BF0097A5AF /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		14D7A5202905B0BF0097A5AF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianTableService.swift; sourceTree = "<group>"; };
 		14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilsCupService.swift; sourceTree = "<group>"; };
 		14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
@@ -540,7 +542,8 @@
 			children = (
 				14E6CFFF2900B92F00F71DD6 /* TeamBrazilianTable.swift */,
 				14D7A51E2905B0310097A5AF /* BrazilsCup.swift */,
-				14D7A5202905B0BF0097A5AF /* Phase.swift */,
+				14D7A5202905B0BF0097A5AF /* Game.swift */,
+				14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */,
 			);
 			path = "Models(Mokcs)";
 			sourceTree = "<group>";
@@ -861,12 +864,13 @@
 				14C23D6A28BA7F6C00C34A6E /* GamesScreen.swift in Sources */,
 				14C23D6628B9555900C34A6E /* ChampionshipsTableViewCell.swift in Sources */,
 				14C5C81F28B698BE00300E6D /* CampeonatoService.swift in Sources */,
-				14D7A5212905B0BF0097A5AF /* Phase.swift in Sources */,
+				14D7A5212905B0BF0097A5AF /* Game.swift in Sources */,
 				14C23D5B28B9336400C34A6E /* TCViewController.swift in Sources */,
 				14D7A52B2906D8CF0097A5AF /* PhaseDetailScreen.swift in Sources */,
 				14ED799228CADE8E00B48DEA /* CupDetailScreen.swift in Sources */,
 				14C5C7ED28B697CC00300E6D /* SceneDelegate.swift in Sources */,
 				14ED79A328D0D30700B48DEA /* LinesUpsGamesTableViewCell.swift in Sources */,
+				14541CE5290AE63F00D329A9 /* GameBrazilsCup.swift in Sources */,
 				14C23D5028B85A4800C34A6E /* ForgotPasswordScreen.swift in Sources */,
 				14E7E7D628E1EDE200CF2F6A /* TeamDetailsTableViewCell.swift in Sources */,
 				142D5E4628C26890002BA5EC /* GamesDetailScreen.swift in Sources */,

@@ -1,14 +1,13 @@
 //
-//  Phase.swift
+//  GameBrazilsCup.swift
 //  TorcedorFC
 //
-//  Created by Marcelo Falcao Costa Filho on 23/10/22.
+//  Created by Marcelo Falcao Costa Filho on 27/10/22.
 //
 
 import Foundation
 
-struct Game {
-    let phase: String
+struct GameBrazilsCup {
     let gameDay: String
     let gameTime: String
     let homeTeam: String
@@ -17,4 +16,3 @@ struct Game {
     let teamVisitor: Int
     let teamVisitorLogo: String
 }
-
