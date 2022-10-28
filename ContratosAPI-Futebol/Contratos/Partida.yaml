@@ -1,0 +1,209 @@
+Partida
+
+GET https://api.api-futebol.com.br/v1/partidas/:partida_id
+
+/*Estatísticas do jogo só esta disponível para Brasileirao
+/** No endpoint não esta retornando a estrutura de gols para poder fazer o modelo. 
+
+Dados necessários
+
+NomeCampeonato
+Status
+TimeMandante
+Escudo
+Placar
+GolsDetalhe
+CartoesVermelhosDetalhe
+TimeVisitante
+Escudo
+Placar
+GolsDetalhe
+CartoesVermelhosDetalhe
+
+Estatísticas*
+
+Chutes
+ChutesAGol
+PosseDeBola
+Passes
+PrecisaoDosPasses
+Faltas
+CartoesAmarelosCount
+CartoesVermelhosCount
+Impedimentos
+Escanteios
+
+Escalações
+
+EsquemaTatico
+JogadorCampo
+Posicao
+NumeroCamisa
+Reservas
+Nome
+NumeroCamisa
+Tecnico
+
+Estrutura retornada pela api apenas os dados necessários para a tela:
+
+{
+	partida_id: int,
+	campeonato: {
+		campeonato_id: int,
+		nome: string
+	},
+	time_mandante: {
+		time_id: int,
+		escudo: string
+	},
+	time_visitante: {
+		time_id: int,
+		escudo: string
+	},
+	placar_mandante: int,
+	placar_visitante: int,
+	status: string,
+	estatisticas: {
+		mandante: {
+			posse_de_bola: string,
+			escanteios: int,
+			impedimentos: int,
+			faltas: int,
+			passes: {
+				total: int,
+				precisao: string
+			},
+			finalizacao: {
+				total: int,
+				no_gol: int
+			}
+		},
+		visitante: {
+			posse_de_bola: string,
+			escanteios: int,
+			impedimentos: int,
+			faltas: int,
+			passes: {
+				total: int,
+				precisao: string
+			},
+			finalizacao: {
+				total: int,
+				no_gol: int
+			}
+		}
+	},
+	cartoes: {
+		amarelo: {
+			mandante: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome_popular: string
+					},
+					minuto: string
+				}
+			],
+			visitante: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome_popular: string
+					},
+					minuto: string
+				}
+			]
+			
+		},
+		vermelho: {
+			mandante: [
+				{
+					atleta: {
+						nome_popular: string
+					},
+					minuto: string
+				}
+			],
+			visitante: [
+				{
+					atleta: {
+						nome_popular: string
+					},
+					minuto: string
+				}
+			]			
+		}
+	},
+	gols:  {
+		mandante: [],
+		visitante: []
+	},
+	escalacoes: {
+		mandante: {
+			esquema_tatico: string,
+			tecnico: {
+        tecnico_id: int,
+        nome_popular: string
+      },
+			titulares: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome: string
+					},
+					camisa: string,
+					ordem: int,
+					posicao: {
+						sigla: string
+					}
+				}
+			],
+			reservas: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome: string
+					},
+					camisa: string,
+					ordem: int,
+					posicao: {
+						sigla: string
+					}
+				}
+			]
+		},
+		visitante: {
+			esquema_tatico: string,
+			tecnico: {
+        tecnico_id: int,
+        nome_popular: string
+      },
+			titulares: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome: string
+					},
+					camisa: string,
+					ordem: int,
+					posicao: {
+						sigla: string
+					}
+				}
+			],
+			reservas: [
+				{
+					atleta: {
+						atleta_id: int,
+						nome: string
+					},
+					camisa: string,
+					ordem: int,
+					posicao: {
+						sigla: string
+					}
+				}
+			]
+		}
+	}
+}

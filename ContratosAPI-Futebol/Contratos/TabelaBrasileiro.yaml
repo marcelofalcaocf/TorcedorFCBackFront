@@ -1,0 +1,35 @@
+Tabela Brasileiro
+
+GET https://api.api-futebol.com.br/v1/campeonatos/:campeonatoId/tabela
+
+Dados necessários:
+
+/*A temporada será passada da tela Home para essa tela
+
+Temporada*
+Posicao
+Escudo
+NomeDoTime
+Pontuacao
+PartidasJogadas
+Vitoria
+Empate
+Derrota
+
+Estrutura retornada pela api apenas os dados necessários para a tela:
+
+[
+	{
+		posicao: int,
+		pontos: int,
+		time: {
+			time_id: int,
+			nome_popular: string,
+			escudo: string
+		},
+		jogos: int,
+		vitorias: int,
+		empates: int,
+		derrotas: int
+	}
+]

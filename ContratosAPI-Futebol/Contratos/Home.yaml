@@ -1,0 +1,33 @@
+Home
+
+GET https://api.api-futebol.com.br/v1/campeonatos
+
+Dados necessários:
+
+CampeonatoId
+Logo
+Edição
+Temporada
+
+Estrutura retornada pela api contendo apenas os dados necessários para a tela:
+
+[
+	{
+		campeonato_id: int,
+ 		logo: string,
+		nome_popular: string,
+		edicao_atual: {
+			edicao_id: int,
+      temporada: string	
+		}
+	},
+	{
+		campeonato_id: int,
+ 		logo: string,
+		nome_popular: string,
+		edicao_atual: {
+			edicao_id: int,
+      temporada: string	
+		}
+	}
+]

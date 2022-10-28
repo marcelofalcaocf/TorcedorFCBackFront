@@ -1,0 +1,107 @@
+Time
+{
+  time_id: int,
+  nome_popular: string,
+  escudo: string
+}
+
+Atleta
+{
+  atleta_id: int,
+  nome: string
+}
+
+Posicao
+{
+  sigla: string
+}
+
+Tecnico
+{
+  tecnico_id: int,
+  nome_popular: string
+}
+
+Jogador
+{
+  atleta: Atleta,
+  camisa: string,
+  ordem: int,
+  posicao: Posicao
+}
+
+DetalhesTimePartida
+{
+  esquema_tatico: string,
+  tecnico: Tecnico,
+  titulares: [Jogador],
+  reservas: [Jogador]
+}
+
+Escalacoes
+{
+  mandante: DetalhesTimePartida,
+  visitante: DetalhesTimePartida
+}
+
+//Confirmar se a estrutura de gol de um jogador é igual ao de cartao para jogador
+EventoJogador
+{
+  atleta: Atleta,
+  minuto: string
+}
+
+CartaoCor
+{
+  mandante: [EventoJogador],
+  visitante: [EventoJogador]
+}
+
+Cartoes
+{
+  amarelo: CartaoCor,
+  vermelho: CartaoCor
+}
+
+Finalizacao
+{
+  total: int,
+  no_gol: int
+}
+
+Passes
+{
+  total: int,
+  precisao: string
+}
+
+Estatisitica
+{
+  posse_de_bola: string,
+	escanteios: int,
+  impedimentos: int,
+  faltas: int,
+  passes: Passes,
+  finalizacao: Finalizacao
+}
+
+Estatisticas
+{
+  mandante: Estatistica,
+  visitante: Estatistica
+}
+
+PartidaDetalhada
+{
+  partida_id: int,
+	campeonato: a definir,
+	time_mandante: Time,
+	time_visitante: Time,
+	placar_mandante: int,
+	placar_visitante: int,
+	status: string,
+	estatisticas: Estatisticas,
+	cartoes: Cartoes,
+	gols: a definir,
+	escalacoes: Escalacoes
+}

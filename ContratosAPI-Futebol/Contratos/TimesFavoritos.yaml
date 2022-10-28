@@ -1,0 +1,44 @@
+Times Favoritos
+
+Para cada time favorito buscar a próxima partida pelo time_id
+
+GET https://api.api-futebol.com.br/v1/times/:time_id/partidas/proximas
+
+Dados necessários:
+
+NomeCampeonato
+Data
+Horario	
+Rodada/Fase
+TimeAdversario
+Logo
+TimeDaCasa
+Logo
+
+Não tem Rodada/Fase no response desse endpoint
+
+Se realmente for necessário essa informação o endpoint de get partida por id deve ser chamado
+
+Estrutura retornada pela api contendo apenas os dados necessários para a tela:
+
+{
+	nome_do_campeonato: [
+		{		
+			partida_id: int,
+			data_realizacao: string,
+			hora_realizacao: string,
+			campeonato: {
+				campeonato_id: int,
+				nome: string
+			},
+			time_mandante: {
+				time_id: int,
+				escudo: string
+			},
+			time_visitante: {
+				time_id: int,
+				escudo: string
+			}
+		}
+	]
+}

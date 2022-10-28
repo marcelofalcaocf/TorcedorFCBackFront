@@ -1,0 +1,17 @@
+Fases Copa do Brasil
+
+GET https://api.api-futebol.com.br/v1/campeonatos/:campeonato_id/fases/:fase_id
+
+Dados necessários:
+
+NomeDaFase
+FaseId
+
+Estrutura retornada pela api contendo apenas os dados necessários para a tela:
+
+[
+	{
+		fase_id: int,
+		nome: string
+	}
+]
