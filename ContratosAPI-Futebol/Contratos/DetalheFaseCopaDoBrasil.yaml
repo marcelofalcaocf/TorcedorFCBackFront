@@ -1,6 +1,6 @@
 Fases Copa do Brasil
 
-GET https://api.api-futebol.com.br/v1/campeonatos/:campeonato_id/fases
+GET https://api.api-futebol.com.br/v1/campeonatos/:campeonato_id/fases/:fase_id
 
 Dados necessários:
 
