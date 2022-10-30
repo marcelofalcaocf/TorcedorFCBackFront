@@ -7,9 +7,23 @@
 
 import Foundation
 
-struct PartidaBase {
-    var partida_id: Int
+class PartidaBase : Codable {
+    var partidaId: Int
     var campeonato: Campeonato
-    var time_mandante: Time
-    var time_visitante: Time
+    var timeMandante: Time
+    var timeVisitante: Time
+    
+    init(partidaId: Int, campeonato: Campeonato, timeMandante: Time, timeVisitante: Time) {
+        self.partidaId = partidaId
+        self.campeonato = campeonato
+        self.timeMandante = timeMandante
+        self.timeVisitante = timeVisitante
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case partidaId = "partida_id"
+        case timeMandante = "time_mandante"
+        case timeVisitante = "time_visitante"
+        case campeonato
+    }
 }

@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct ProximaPartida {
-    var nome_do_campeonato: [PartidaBase]
+class ProximaPartida : Codable {
+    var nomeDoCampeonato: [PartidaBase]
+    
+    init(nomeDoCampeonato: [PartidaBase]) {
+        self.nomeDoCampeonato = nomeDoCampeonato
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case nomeDoCampeonato = "nome_do_campeonato"
+    }
 }

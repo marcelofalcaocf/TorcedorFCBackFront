@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CampeonatoServiceProtocol: GenericService {
-    func getAllListaDeCampeonatos(completion: @escaping completion<[ListaDeCampeonato]?>)
+    func getAllListaDeCampeonatos(completion: @escaping completion<[Campeonato]?>)
 }
 
 class CampeonatoService: CampeonatoServiceProtocol {
@@ -16,7 +16,7 @@ class CampeonatoService: CampeonatoServiceProtocol {
     private let keychain: String = "live_81f4054f57f2d6c1ea0f73996d5d57"
     private let keychainTest: String = "test_2ada5f4c7bb777d3be168a3da854e0"
     
-    func getAllListaDeCampeonatos(completion: @escaping completion<[ListaDeCampeonato]?>) {
+    func getAllListaDeCampeonatos(completion: @escaping completion<[Campeonato]?>) {
         guard let url = URL(string: "\(baseUrl)campeonatos") else {
             return completion(nil, Error.errorDescription(message: "Erro De URL"))
         }
@@ -39,7 +39,7 @@ class CampeonatoService: CampeonatoServiceProtocol {
             }
             
             do {
-                let decodeData = try JSONDecoder().decode([ListaDeCampeonato].self, from: data)
+                let decodeData = try JSONDecoder().decode([Campeonato].self, from: data)
                 completion(decodeData, nil)
             } catch {
                 completion(nil, Error.errorDescription(message: "Erro Do Parse", error: error))

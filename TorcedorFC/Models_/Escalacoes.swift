@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct Escalacoes {
+class Escalacoes : Codable {
     var mandante: DetalhesTimePartida
     var visitante: DetalhesTimePartida
+    
+    init(mandante: DetalhesTimePartida, visitante: DetalhesTimePartida) {
+        self.mandante = mandante
+        self.visitante = visitante
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case mandante, visitante
+    }
 }

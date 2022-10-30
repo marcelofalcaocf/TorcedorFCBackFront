@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct Atleta {
-    var atleta_id: Int
+class Atleta: Codable {
+    var atletaId: Int
     var nome: String
+    
+    init(atletaId: Int, nome: String) {
+        self.atletaId = atletaId
+        self.nome = nome
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case atletaId = "atleta_id"
+        case nome
+    }
 }

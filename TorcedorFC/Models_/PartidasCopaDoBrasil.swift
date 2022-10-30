@@ -9,10 +9,26 @@ import Foundation
 
 // Não tem modelo da response do campeonato brasileiro
 
-struct PartidasCopaDoBrasil {
+class PartidasCopaDoBrasil : Codable {
     var partidas: PartidasAux
+    
+    init(partidas: PartidasAux) {
+        self.partidas = partidas
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case partidas
+    }
 }
 
-struct PartidasAux {
+class PartidasAux : Codable {
     var partidas: FaseBase
+    
+    init(partidas: FaseBase) {
+        self.partidas = partidas
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case partidas
+    }
 }

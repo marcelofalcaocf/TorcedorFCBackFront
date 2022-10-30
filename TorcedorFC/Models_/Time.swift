@@ -7,8 +7,20 @@
 
 import Foundation
 
-struct Time {
-    var time_id: Int
-    var nome_popular: String
+class Time : Codable {
+    var timeId: Int
+    var nomePopular: String
     var escudo: String
+    
+    init(timeId: Int, nomePopular: String, escudo: String) {
+        self.timeId = timeId
+        self.nomePopular = nomePopular
+        self.escudo = escudo
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case timeId = "time_id"
+        case nomePopular = "nome_popular"
+        case escudo
+    }
 }

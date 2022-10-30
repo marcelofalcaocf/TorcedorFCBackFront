@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct Edicao {
-    var edicao_id: Int
+class Edicao: Codable {
+    var edicaoId: Int
     var temporada: String
+    
+    init(edicaoId: Int, temporada: String) {
+        self.edicaoId = edicaoId
+        self.temporada = temporada
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case edicaoId = "edicao_id"
+        case temporada
+    }
 }

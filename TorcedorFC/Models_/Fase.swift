@@ -7,6 +7,15 @@
 
 import Foundation
 
-struct Fase : FaseBase {    
+class Fase : FaseBase {
     var chaves: [Chave]
+    
+    init(chaves: [Chave], faseId: Int, nome: String) {
+        self.chaves = chaves
+        super.init(faseId: faseId, nome: nome)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
 }

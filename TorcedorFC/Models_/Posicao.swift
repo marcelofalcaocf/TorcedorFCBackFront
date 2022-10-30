@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct Posicao {    
+class Posicao : Codable {
     var sigla: String
+    
+    init(sigla: String) {
+        self.sigla = sigla
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case sigla 
+    }
 }

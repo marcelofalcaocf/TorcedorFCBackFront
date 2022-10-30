@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct Finalizacao {
+class Finalizacao : Codable {
     var total: Int
-    var no_gol: Int
+    var noGol: Int
+    
+    init(total: Int, noGol: Int) {
+        self.total = total
+        self.noGol = noGol
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case total
+        case noGol = "no_gol"
+    }
 }

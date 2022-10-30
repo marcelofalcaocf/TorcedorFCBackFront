@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+//import FirebaseAuth
 
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -22,9 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let countLogged = Auth.auth().currentUser
+        //let countLogged = Auth.auth().currentUser
         
-        if countLogged != nil {
+        let countLogged = true
+        
+        if countLogged {
             let vc: TabBarController = .init()
             let navVC = UINavigationController(rootViewController: vc)
             window.rootViewController = navVC

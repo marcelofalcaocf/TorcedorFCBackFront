@@ -6,29 +6,6 @@
 
 import Foundation
 
-// MARK: - ListaDeCampeonato
-struct ListaDeCampeonato: Codable {
-    let campeonatoID: Int
-    let nome, slug, nomePopular: String
-    let edicaoAtual: EdicaoAtual
-    let faseAtual: FaseAtual
-    let rodadaAtual: RodadaAtual?
-    let status: Status
-    let tipo: ListaDeJogoTipo
-    let logo: String
-    let link: String
-
-    enum CodingKeys: String, CodingKey {
-        case campeonatoID = "campeonato_id"
-        case nome, slug
-        case nomePopular = "nome_popular"
-        case edicaoAtual = "edicao_atual"
-        case faseAtual = "fase_atual"
-        case rodadaAtual = "rodada_atual"
-        case status, tipo, logo
-        case link = "_link"
-    }
-}
 
 // MARK: - EdicaoAtual
 struct EdicaoAtual: Codable {
@@ -81,6 +58,4 @@ enum ListaDeJogoTipo: String, Codable {
     case misto = "Misto"
     case pontosCorridos = "Pontos Corridos"
 }
-
-typealias ListaDeCampeonatos = [ListaDeCampeonato]
 

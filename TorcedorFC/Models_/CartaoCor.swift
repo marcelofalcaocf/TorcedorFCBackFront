@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct CartaoCor {
+class CartaoCor : Codable {
     var mandante: [EventoJogador]
     var visitante: [EventoJogador]
+    
+    init(mandante: [EventoJogador], visitante: [EventoJogador]) {
+        self.mandante = mandante
+        self.visitante = visitante
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case mandante, visitante
+    }
 }

@@ -16,8 +16,8 @@ class HomeViewModel {
     
     private var delegate: HomeViewModelDelegate?
     private let service: CampeonatoService = .init()
-    var campeonatos: [ListaDeCampeonato] = []
-    var filterCampeonatos: [ListaDeCampeonato] = []
+    var campeonatos: [Campeonato] = []
+    var filterCampeonatos: [Campeonato] = []
     
     public func delegate(delegate: HomeViewModelDelegate) {
         self.delegate = delegate
@@ -31,7 +31,7 @@ class HomeViewModel {
         service.getAllListaDeCampeonatos { success, error in
             if let success = success {
                 self.campeonatos = success
-                self.filterCampeonatos = self.campeonatos.filter { $0.campeonatoID == 10 || $0.campeonatoID == 2 }
+                self.filterCampeonatos = self.campeonatos.filter { $0.campeonatoId == 10 || $0.campeonatoId == 2 }
                 self.delegate?.success()
             } else {
                 self.delegate?.error()

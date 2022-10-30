@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import FirebaseAuth
+//import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     let viewModel: HomeViewModel = .init()
-    var auth: Auth?
+   // var auth: Auth?
     var alert:Alert?
     
     override func loadView() {
@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         viewModel.delegate(delegate: self)
         viewModel.getCampeonatos()
         
-        auth = Auth.auth()
+ //       auth = Auth.auth()
         alert = Alert(controller: self)
     }
     
@@ -45,7 +45,7 @@ extension LoginViewController: LoginScreenProtocol {
         guard let login = self.loginScreen else { return }
         let vc: TabBarController = TabBarController()
 
-        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
+        /*self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
             if error != nil {
                 self.alert?.getAlert(titulo: "Atenção", mensagem: "Atenção dados incorretos, verifique e tente novamente")
             }else {
@@ -56,7 +56,7 @@ extension LoginViewController: LoginScreenProtocol {
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
-        })
+        })*/
 
     }
     

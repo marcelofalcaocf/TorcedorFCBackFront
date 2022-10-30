@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct Passes {
+class Passes : Codable{
     var total: Int
     var precisao: String
+    
+    init(total: Int, precisao: String) {
+        self.total = total
+        self.precisao = precisao
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case total, precisao
+    }
 }

@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct FaseBase {
-    var fase_id: Int
+class FaseBase : Codable {
+    var faseId: Int
     var nome: String
+    
+    init(faseId: Int, nome: String) {
+        self.faseId = faseId
+        self.nome = nome
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case faseId = "fase_id"
+        case nome
+    }
 }

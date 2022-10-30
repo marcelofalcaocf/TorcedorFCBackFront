@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - TabelaBrasileiraoElement
-struct TabelaBrasileiraoElement: Codable {
+struct TabelaBrasileiraoElement : Codable{
     let posicao, pontos: Int
     let time: Time
     let jogos, vitorias, empates, derrotas: Int
@@ -28,17 +28,6 @@ struct TabelaBrasileiraoElement: Codable {
 }
 
 // MARK: - Time
-struct Time: Codable {
-    let timeID: Int
-    let nomePopular, sigla: String
-    let escudo: String
-
-    enum CodingKeys: String, CodingKey {
-        case timeID = "time_id"
-        case nomePopular = "nome_popular"
-        case sigla, escudo
-    }
-}
 
 enum UltimosJogo: String, Codable {
     case d = "d"

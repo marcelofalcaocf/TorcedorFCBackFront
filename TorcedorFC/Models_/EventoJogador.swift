@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct EventoJogador {
+class EventoJogador : Codable {
     var atleta: Atleta
     var minuto: String
+    
+    init(atleta: Atleta, minuto: String) {
+        self.atleta = atleta
+        self.minuto = minuto
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case atleta, minuto
+    }
 }

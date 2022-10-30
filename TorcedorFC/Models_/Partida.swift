@@ -7,7 +7,27 @@
 
 import Foundation
 
-struct Partida : PartidaBase {
-    var placar_mandante: Int
-    var placar_visitante: Int    
+class Partida : PartidaBase {
+    var placarMandante: Int
+    var placarVisitante: Int
+    
+    init(placarMandante: Int, placarVisitante: Int, partidaId: Int, campeonato: Campeonato, timeMandante: Time, timeVisitante: Time) {
+        self.placarMandante = placarMandante
+        self.placarVisitante = placarVisitante
+        super.init(
+            partidaId: partidaId,
+            campeonato: campeonato,
+            timeMandante: timeMandante,
+            timeVisitante: timeVisitante
+        )
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case placarMandante = "placar_mandante"
+        case placarVisitante = "placar_visitante"
+    }
 }

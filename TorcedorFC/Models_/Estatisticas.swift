@@ -7,8 +7,17 @@
 
 import Foundation
 
-struct Estatisticas {
+class Estatisticas : Codable{
     var mandante: Estatistica
     var visitante: Estatistica
+    
+    init(mandante: Estatistica, visitante: Estatistica) {
+        self.mandante = mandante
+        self.visitante = visitante
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case mandante, visitante
+    }
 }
 
