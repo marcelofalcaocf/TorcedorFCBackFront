@@ -102,6 +102,7 @@
 		C41EE39C290C8814006666E9 /* PartidaCompleta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE39B290C8814006666E9 /* PartidaCompleta.swift */; };
 		C41EE39E290C897A006666E9 /* FaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE39D290C897A006666E9 /* FaseBase.swift */; };
 		C47041F3290E09E2005F5D7A /* HomeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47041F2290E09E2005F5D7A /* HomeMock.swift */; };
+		C47041F5290E0BEC005F5D7A /* BrazilCupFaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +226,7 @@
 		C41EE39B290C8814006666E9 /* PartidaCompleta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidaCompleta.swift; sourceTree = "<group>"; };
 		C41EE39D290C897A006666E9 /* FaseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseBase.swift; sourceTree = "<group>"; };
 		C47041F2290E09E2005F5D7A /* HomeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMock.swift; sourceTree = "<group>"; };
+		C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilCupFaseMock.swift; sourceTree = "<group>"; };
 		C9FE30DEDC7B19D5F2E14759 /* Pods-TorcedorFCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCTests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFCTests/Pods-TorcedorFCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2AE837DA4E1EBA1CEF6ABAD /* Pods-TorcedorFCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFCUITests/Pods-TorcedorFCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5B1F34F58633E020653DCDF /* libPods-TorcedorFCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TorcedorFCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -572,6 +574,7 @@
 				14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */,
 				14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */,
 				C47041F2290E09E2005F5D7A /* HomeMock.swift */,
+				C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */,
 			);
 			path = ServiceMock;
 			sourceTree = "<group>";
@@ -981,6 +984,7 @@
 				14D7A5302906DE000097A5AF /* PhaseDetailCellScreen.swift in Sources */,
 				C41EE380290C43B5006666E9 /* Cartoes.swift in Sources */,
 				142D5E4328C039C5002BA5EC /* FaseCopaModel.swift in Sources */,
+				C47041F5290E0BEC005F5D7A /* BrazilCupFaseMock.swift in Sources */,
 				14C23D6C28BAAB3B00C34A6E /* ProfileScreen.swift in Sources */,
 				C41EE370290C3E56006666E9 /* Atleta.swift in Sources */,
 				C41EE37C290C4322006666E9 /* EventoJogador.swift in Sources */,
