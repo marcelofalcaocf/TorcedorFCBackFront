@@ -55,8 +55,8 @@
 		14C5C82728B6A61D00300E6D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82628B6A61D00300E6D /* HomeViewModel.swift */; };
 		14C5C82928B6AA2600300E6D /* TabelaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82828B6AA2600300E6D /* TabelaService.swift */; };
 		14C5C82B28B6AB1200300E6D /* TabelaBrasileiraoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */; };
-		14D7A5242905B6FD0097A5AF /* BrazilianTableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */; };
-		14D7A5262905B70E0097A5AF /* BrazilsCupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */; };
+		14D7A5242905B6FD0097A5AF /* BrazilianTableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */; };
+		14D7A5262905B70E0097A5AF /* BrazilCupFasesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */; };
 		14D7A5282906D8990097A5AF /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */; };
 		14D7A52B2906D8CF0097A5AF /* PhaseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A52A2906D8CF0097A5AF /* PhaseDetailScreen.swift */; };
 		14D7A52E2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A52D2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift */; };
@@ -174,8 +174,8 @@
 		14C5C82628B6A61D00300E6D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		14C5C82828B6AA2600300E6D /* TabelaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaService.swift; sourceTree = "<group>"; };
 		14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaBrasileiraoModel.swift; sourceTree = "<group>"; };
-		14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianTableService.swift; sourceTree = "<group>"; };
-		14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilsCupService.swift; sourceTree = "<group>"; };
+		14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianTableMock.swift; sourceTree = "<group>"; };
+		14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilCupFasesMock.swift; sourceTree = "<group>"; };
 		14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
 		14D7A52A2906D8CF0097A5AF /* PhaseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailScreen.swift; sourceTree = "<group>"; };
 		14D7A52D2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -567,8 +567,8 @@
 		14D7A5222905B6A80097A5AF /* ServiceMock */ = {
 			isa = PBXGroup;
 			children = (
-				14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */,
-				14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */,
+				14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */,
+				14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */,
 			);
 			path = ServiceMock;
 			sourceTree = "<group>";
@@ -987,7 +987,7 @@
 				C41EE39A290C86EC006666E9 /* Fase.swift in Sources */,
 				14E7E7D428E1ED9E00CF2F6A /* TeamDetailsScreen.swift in Sources */,
 				14E6CFF528FE1DDB00F71DD6 /* RedefinePasswordViewController.swift in Sources */,
-				14D7A5262905B70E0097A5AF /* BrazilsCupService.swift in Sources */,
+				14D7A5262905B70E0097A5AF /* BrazilCupFasesMock.swift in Sources */,
 				C41EE38A290C8150006666E9 /* Edicao.swift in Sources */,
 				14ED799928CBA69400B48DEA /* CupPhasesScreen.swift in Sources */,
 				14ED799428CAE08200B48DEA /* CupDetailViewController.swift in Sources */,
@@ -1009,7 +1009,7 @@
 				C41EE398290C86BC006666E9 /* Chave.swift in Sources */,
 				14C5C82228B69A8F00300E6D /* ListaDeCampeonatosModel.swift in Sources */,
 				14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */,
-				14D7A5242905B6FD0097A5AF /* BrazilianTableService.swift in Sources */,
+				14D7A5242905B6FD0097A5AF /* BrazilianTableMock.swift in Sources */,
 				142D5E4128C02BF9002BA5EC /* GameTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

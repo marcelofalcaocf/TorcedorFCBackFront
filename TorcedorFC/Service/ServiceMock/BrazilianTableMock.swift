@@ -7,8 +7,8 @@
 
 import Foundation
 
-class BrazilianTableService {
-    
+class BrazilianTableMock {
+    var temporada: String = "2022"
     var brazilianTableData: [LinhaTabelaCampeonatoBrasileiro] = [
         LinhaTabelaCampeonatoBrasileiro(
             posicao: 1,
