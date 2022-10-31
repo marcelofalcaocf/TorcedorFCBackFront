@@ -1,0 +1,15 @@
+Lista Times
+
+Não existe endpoint que traz a lista de times.
+
+Possível solução:
+Criar uma lista de times vazia.
+
+Dar um get no endpoint da primeira fase da copa do brasil, e para cada time adicionar na lista de times.
+
+Dar um get na tabela do brasileiro e para cada time adicionar na lista dando distinctBy timeId para não repetir times.
+
+Dados necessários:
+
+TimeId
+Escudo

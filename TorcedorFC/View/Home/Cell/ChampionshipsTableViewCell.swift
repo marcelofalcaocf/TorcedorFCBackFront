@@ -28,7 +28,7 @@ class ChampionshipsTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.championshipsView)
     }
     
-    public func setUpCell(data: ListaDeCampeonato) {
+    public func setUpCell(data: Campeonato) {
         guard let url = URL(string: data.logo) else { return }
         self.championshipsView.champImageView.kf.setImage(with: url)
     }

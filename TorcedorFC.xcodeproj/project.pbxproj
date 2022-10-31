@@ -20,7 +20,6 @@
 		142D5E5428C66756002BA5EC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D5E5328C66756002BA5EC /* GamesTableViewCell.swift */; };
 		144F2B4028D4D310001AE671 /* GameDaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B3F28D4D310001AE671 /* GameDaysCollectionViewCell.swift */; };
 		144F2B4228D4D321001AE671 /* GameDaysScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144F2B4128D4D321001AE671 /* GameDaysScreen.swift */; };
-		14541CE5290AE63F00D329A9 /* GameBrazilsCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */; };
 		14541CE7290AF34600D329A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14541CE6290AF34500D329A9 /* GoogleService-Info.plist */; };
 		14541CEC290AF75000D329A9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14541CEB290AF75000D329A9 /* Alert.swift */; };
 		14C23D2F28B7C79A00C34A6E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */; };
@@ -56,17 +55,14 @@
 		14C5C82728B6A61D00300E6D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82628B6A61D00300E6D /* HomeViewModel.swift */; };
 		14C5C82928B6AA2600300E6D /* TabelaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82828B6AA2600300E6D /* TabelaService.swift */; };
 		14C5C82B28B6AB1200300E6D /* TabelaBrasileiraoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */; };
-		14D7A51F2905B0310097A5AF /* BrazilsCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A51E2905B0310097A5AF /* BrazilsCup.swift */; };
-		14D7A5212905B0BF0097A5AF /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5202905B0BF0097A5AF /* Phase.swift */; };
-		14D7A5242905B6FD0097A5AF /* BrazilianTableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */; };
-		14D7A5262905B70E0097A5AF /* BrazilsCupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */; };
+		14D7A5242905B6FD0097A5AF /* BrazilianTableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */; };
+		14D7A5262905B70E0097A5AF /* BrazilCupFasesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */; };
 		14D7A5282906D8990097A5AF /* PhaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */; };
 		14D7A52B2906D8CF0097A5AF /* PhaseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A52A2906D8CF0097A5AF /* PhaseDetailScreen.swift */; };
 		14D7A52E2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A52D2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift */; };
 		14D7A5302906DE000097A5AF /* PhaseDetailCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7A52F2906DE000097A5AF /* PhaseDetailCellScreen.swift */; };
 		14E6CFF528FE1DDB00F71DD6 /* RedefinePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6CFF428FE1DDB00F71DD6 /* RedefinePasswordViewController.swift */; };
 		14E6CFF728FE1E2300F71DD6 /* RedefinePasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6CFF628FE1E2300F71DD6 /* RedefinePasswordScreen.swift */; };
-		14E6D0002900B92F00F71DD6 /* TeamBrazilianTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E6CFFF2900B92F00F71DD6 /* TeamBrazilianTable.swift */; };
 		14E7E7D428E1ED9E00CF2F6A /* TeamDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7D328E1ED9E00CF2F6A /* TeamDetailsScreen.swift */; };
 		14E7E7D628E1EDE200CF2F6A /* TeamDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7E7D528E1EDE200CF2F6A /* TeamDetailsTableViewCell.swift */; };
 		14ED799228CADE8E00B48DEA /* CupDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED799128CADE8E00B48DEA /* CupDetailScreen.swift */; };
@@ -80,6 +76,36 @@
 		16BAC42337476A22179BA314 /* Pods_TorcedorFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B20A53155E3935FB825A21F /* Pods_TorcedorFC.framework */; };
 		49766258DE757AFA377E40EE /* libPods-TorcedorFCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B1F34F58633E020653DCDF /* libPods-TorcedorFCTests.a */; };
 		9B1BC542F6087ED444E1BF44 /* libPods-TorcedorFCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB66E060E82687828CC7B8A /* libPods-TorcedorFCUITests.a */; };
+		C40A4FC9290F49E60094FF18 /* MyFavouriteTeamsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */; };
+		C41EE36E290C3D6E006666E9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE36D290C3D6E006666E9 /* Time.swift */; };
+		C41EE370290C3E56006666E9 /* Atleta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE36F290C3E56006666E9 /* Atleta.swift */; };
+		C41EE372290C4176006666E9 /* Posicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE371290C4176006666E9 /* Posicao.swift */; };
+		C41EE374290C41BB006666E9 /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE373290C41BB006666E9 /* Tecnico.swift */; };
+		C41EE376290C4210006666E9 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE375290C4210006666E9 /* Jogador.swift */; };
+		C41EE378290C4280006666E9 /* DetalhesTimePartida.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE377290C4280006666E9 /* DetalhesTimePartida.swift */; };
+		C41EE37A290C42D6006666E9 /* Escalacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE379290C42D6006666E9 /* Escalacoes.swift */; };
+		C41EE37C290C4322006666E9 /* EventoJogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE37B290C4322006666E9 /* EventoJogador.swift */; };
+		C41EE37E290C4370006666E9 /* CartaoCor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE37D290C4370006666E9 /* CartaoCor.swift */; };
+		C41EE380290C43B5006666E9 /* Cartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE37F290C43B5006666E9 /* Cartoes.swift */; };
+		C41EE382290C43EB006666E9 /* Finalizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE381290C43EB006666E9 /* Finalizacao.swift */; };
+		C41EE384290C442F006666E9 /* Passes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE383290C442F006666E9 /* Passes.swift */; };
+		C41EE386290C4471006666E9 /* Estatisitica.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE385290C4471006666E9 /* Estatisitica.swift */; };
+		C41EE388290C4515006666E9 /* Estatisticas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE387290C4515006666E9 /* Estatisticas.swift */; };
+		C41EE38A290C8150006666E9 /* Edicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE389290C8150006666E9 /* Edicao.swift */; };
+		C41EE38C290C8183006666E9 /* Campeonato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE38B290C8183006666E9 /* Campeonato.swift */; };
+		C41EE38E290C8245006666E9 /* Partida.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE38D290C8245006666E9 /* Partida.swift */; };
+		C41EE390290C83F8006666E9 /* LinhaTabelaCampeonatoBrasileiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE38F290C83F8006666E9 /* LinhaTabelaCampeonatoBrasileiro.swift */; };
+		C41EE392290C84C1006666E9 /* ProximaPartida.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE391290C84C1006666E9 /* ProximaPartida.swift */; };
+		C41EE394290C8541006666E9 /* PartidaBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE393290C8541006666E9 /* PartidaBase.swift */; };
+		C41EE396290C864A006666E9 /* PartidasCopaDoBrasil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE395290C864A006666E9 /* PartidasCopaDoBrasil.swift */; };
+		C41EE398290C86BC006666E9 /* Chave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE397290C86BC006666E9 /* Chave.swift */; };
+		C41EE39A290C86EC006666E9 /* Fase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE399290C86EC006666E9 /* Fase.swift */; };
+		C41EE39C290C8814006666E9 /* PartidaCompleta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE39B290C8814006666E9 /* PartidaCompleta.swift */; };
+		C41EE39E290C897A006666E9 /* FaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE39D290C897A006666E9 /* FaseBase.swift */; };
+		C47041F3290E09E2005F5D7A /* HomeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47041F2290E09E2005F5D7A /* HomeMock.swift */; };
+		C47041F5290E0BEC005F5D7A /* BrazilCupFaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */; };
+		C47041F7290E1548005F5D7A /* FavouriteTeamsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47041F6290E1548005F5D7A /* FavouriteTeamsMock.swift */; };
+		C4EBBFBE290EB32700CE54DC /* MatchDetailsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBBFBD290EB32700CE54DC /* MatchDetailsMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +140,6 @@
 		142D5E5328C66756002BA5EC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		144F2B3F28D4D310001AE671 /* GameDaysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysCollectionViewCell.swift; sourceTree = "<group>"; };
 		144F2B4128D4D321001AE671 /* GameDaysScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDaysScreen.swift; sourceTree = "<group>"; };
-		14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrazilsCup.swift; sourceTree = "<group>"; };
 		14541CE6290AF34500D329A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14541CEB290AF75000D329A9 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -154,17 +179,14 @@
 		14C5C82628B6A61D00300E6D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		14C5C82828B6AA2600300E6D /* TabelaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaService.swift; sourceTree = "<group>"; };
 		14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelaBrasileiraoModel.swift; sourceTree = "<group>"; };
-		14D7A51E2905B0310097A5AF /* BrazilsCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilsCup.swift; sourceTree = "<group>"; };
-		14D7A5202905B0BF0097A5AF /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
-		14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianTableService.swift; sourceTree = "<group>"; };
-		14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilsCupService.swift; sourceTree = "<group>"; };
+		14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianTableMock.swift; sourceTree = "<group>"; };
+		14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilCupFasesMock.swift; sourceTree = "<group>"; };
 		14D7A5272906D8990097A5AF /* PhaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewController.swift; sourceTree = "<group>"; };
 		14D7A52A2906D8CF0097A5AF /* PhaseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailScreen.swift; sourceTree = "<group>"; };
 		14D7A52D2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailTableViewCell.swift; sourceTree = "<group>"; };
 		14D7A52F2906DE000097A5AF /* PhaseDetailCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailCellScreen.swift; sourceTree = "<group>"; };
 		14E6CFF428FE1DDB00F71DD6 /* RedefinePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedefinePasswordViewController.swift; sourceTree = "<group>"; };
 		14E6CFF628FE1E2300F71DD6 /* RedefinePasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedefinePasswordScreen.swift; sourceTree = "<group>"; };
-		14E6CFFF2900B92F00F71DD6 /* TeamBrazilianTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBrazilianTable.swift; sourceTree = "<group>"; };
 		14E7E7D328E1ED9E00CF2F6A /* TeamDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsScreen.swift; sourceTree = "<group>"; };
 		14E7E7D528E1EDE200CF2F6A /* TeamDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		14ED799128CADE8E00B48DEA /* CupDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupDetailScreen.swift; sourceTree = "<group>"; };
@@ -181,6 +203,36 @@
 		7A0C97A4ECFA85F4E7789223 /* Pods-TorcedorFCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCUITests.release.xcconfig"; path = "Target Support Files/Pods-TorcedorFCUITests/Pods-TorcedorFCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F72A39515A6AF361E031164 /* Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFC-TorcedorFCUITests/Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9136363A340EDAA84F310175 /* Pods-TorcedorFCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCTests.release.xcconfig"; path = "Target Support Files/Pods-TorcedorFCTests/Pods-TorcedorFCTests.release.xcconfig"; sourceTree = "<group>"; };
+		C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteTeamsMock.swift; sourceTree = "<group>"; };
+		C41EE36D290C3D6E006666E9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		C41EE36F290C3E56006666E9 /* Atleta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atleta.swift; sourceTree = "<group>"; };
+		C41EE371290C4176006666E9 /* Posicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posicao.swift; sourceTree = "<group>"; };
+		C41EE373290C41BB006666E9 /* Tecnico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnico.swift; sourceTree = "<group>"; };
+		C41EE375290C4210006666E9 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
+		C41EE377290C4280006666E9 /* DetalhesTimePartida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesTimePartida.swift; sourceTree = "<group>"; };
+		C41EE379290C42D6006666E9 /* Escalacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Escalacoes.swift; sourceTree = "<group>"; };
+		C41EE37B290C4322006666E9 /* EventoJogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoJogador.swift; sourceTree = "<group>"; };
+		C41EE37D290C4370006666E9 /* CartaoCor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoCor.swift; sourceTree = "<group>"; };
+		C41EE37F290C43B5006666E9 /* Cartoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoes.swift; sourceTree = "<group>"; };
+		C41EE381290C43EB006666E9 /* Finalizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finalizacao.swift; sourceTree = "<group>"; };
+		C41EE383290C442F006666E9 /* Passes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passes.swift; sourceTree = "<group>"; };
+		C41EE385290C4471006666E9 /* Estatisitica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estatisitica.swift; sourceTree = "<group>"; };
+		C41EE387290C4515006666E9 /* Estatisticas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estatisticas.swift; sourceTree = "<group>"; };
+		C41EE389290C8150006666E9 /* Edicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edicao.swift; sourceTree = "<group>"; };
+		C41EE38B290C8183006666E9 /* Campeonato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campeonato.swift; sourceTree = "<group>"; };
+		C41EE38D290C8245006666E9 /* Partida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partida.swift; sourceTree = "<group>"; };
+		C41EE38F290C83F8006666E9 /* LinhaTabelaCampeonatoBrasileiro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinhaTabelaCampeonatoBrasileiro.swift; sourceTree = "<group>"; };
+		C41EE391290C84C1006666E9 /* ProximaPartida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximaPartida.swift; sourceTree = "<group>"; };
+		C41EE393290C8541006666E9 /* PartidaBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidaBase.swift; sourceTree = "<group>"; };
+		C41EE395290C864A006666E9 /* PartidasCopaDoBrasil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidasCopaDoBrasil.swift; sourceTree = "<group>"; };
+		C41EE397290C86BC006666E9 /* Chave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chave.swift; sourceTree = "<group>"; };
+		C41EE399290C86EC006666E9 /* Fase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase.swift; sourceTree = "<group>"; };
+		C41EE39B290C8814006666E9 /* PartidaCompleta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidaCompleta.swift; sourceTree = "<group>"; };
+		C41EE39D290C897A006666E9 /* FaseBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaseBase.swift; sourceTree = "<group>"; };
+		C47041F2290E09E2005F5D7A /* HomeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMock.swift; sourceTree = "<group>"; };
+		C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilCupFaseMock.swift; sourceTree = "<group>"; };
+		C47041F6290E1548005F5D7A /* FavouriteTeamsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTeamsMock.swift; sourceTree = "<group>"; };
+		C4EBBFBD290EB32700CE54DC /* MatchDetailsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsMock.swift; sourceTree = "<group>"; };
 		C9FE30DEDC7B19D5F2E14759 /* Pods-TorcedorFCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCTests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFCTests/Pods-TorcedorFCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2AE837DA4E1EBA1CEF6ABAD /* Pods-TorcedorFCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFCUITests/Pods-TorcedorFCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5B1F34F58633E020653DCDF /* libPods-TorcedorFCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TorcedorFCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +510,7 @@
 		14C5C7E928B697CC00300E6D /* TorcedorFC */ = {
 			isa = PBXGroup;
 			children = (
+				C41EE36C290C3CC1006666E9 /* Models_ */,
 				14541CE9290AF73E00D329A9 /* Utils */,
 				14C23D2C28B7C72700C34A6E /* View */,
 				14C5C82528B6A60600300E6D /* ViewModel */,
@@ -502,7 +555,6 @@
 		14C5C82028B69A7500300E6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				14E6CFFE2900B84A00F71DD6 /* Models(Mokcs) */,
 				14C5C82128B69A8F00300E6D /* ListaDeCampeonatosModel.swift */,
 				14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */,
 				142D5E4228C039C5002BA5EC /* FaseCopaModel.swift */,
@@ -525,8 +577,13 @@
 		14D7A5222905B6A80097A5AF /* ServiceMock */ = {
 			isa = PBXGroup;
 			children = (
-				14D7A5232905B6FD0097A5AF /* BrazilianTableService.swift */,
-				14D7A5252905B70E0097A5AF /* BrazilsCupService.swift */,
+				14D7A5232905B6FD0097A5AF /* BrazilianTableMock.swift */,
+				14D7A5252905B70E0097A5AF /* BrazilCupFasesMock.swift */,
+				C47041F2290E09E2005F5D7A /* HomeMock.swift */,
+				C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */,
+				C47041F6290E1548005F5D7A /* FavouriteTeamsMock.swift */,
+				C4EBBFBD290EB32700CE54DC /* MatchDetailsMock.swift */,
+				C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */,
 			);
 			path = ServiceMock;
 			sourceTree = "<group>";
@@ -557,17 +614,6 @@
 				14E6CFF628FE1E2300F71DD6 /* RedefinePasswordScreen.swift */,
 			);
 			path = RedefinePassword;
-			sourceTree = "<group>";
-		};
-		14E6CFFE2900B84A00F71DD6 /* Models(Mokcs) */ = {
-			isa = PBXGroup;
-			children = (
-				14E6CFFF2900B92F00F71DD6 /* TeamBrazilianTable.swift */,
-				14D7A51E2905B0310097A5AF /* BrazilsCup.swift */,
-				14D7A5202905B0BF0097A5AF /* Phase.swift */,
-				14541CE4290AE63F00D329A9 /* GameBrazilsCup.swift */,
-			);
-			path = "Models(Mokcs)";
 			sourceTree = "<group>";
 		};
 		14E7E7D228E1ECB100CF2F6A /* Cell */ = {
@@ -640,6 +686,38 @@
 				7A0C97A4ECFA85F4E7789223 /* Pods-TorcedorFCUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C41EE36C290C3CC1006666E9 /* Models_ */ = {
+			isa = PBXGroup;
+			children = (
+				C41EE36D290C3D6E006666E9 /* Time.swift */,
+				C41EE36F290C3E56006666E9 /* Atleta.swift */,
+				C41EE371290C4176006666E9 /* Posicao.swift */,
+				C41EE373290C41BB006666E9 /* Tecnico.swift */,
+				C41EE375290C4210006666E9 /* Jogador.swift */,
+				C41EE377290C4280006666E9 /* DetalhesTimePartida.swift */,
+				C41EE379290C42D6006666E9 /* Escalacoes.swift */,
+				C41EE37B290C4322006666E9 /* EventoJogador.swift */,
+				C41EE37D290C4370006666E9 /* CartaoCor.swift */,
+				C41EE37F290C43B5006666E9 /* Cartoes.swift */,
+				C41EE381290C43EB006666E9 /* Finalizacao.swift */,
+				C41EE383290C442F006666E9 /* Passes.swift */,
+				C41EE385290C4471006666E9 /* Estatisitica.swift */,
+				C41EE387290C4515006666E9 /* Estatisticas.swift */,
+				C41EE389290C8150006666E9 /* Edicao.swift */,
+				C41EE38B290C8183006666E9 /* Campeonato.swift */,
+				C41EE38D290C8245006666E9 /* Partida.swift */,
+				C41EE38F290C83F8006666E9 /* LinhaTabelaCampeonatoBrasileiro.swift */,
+				C41EE391290C84C1006666E9 /* ProximaPartida.swift */,
+				C41EE393290C8541006666E9 /* PartidaBase.swift */,
+				C41EE395290C864A006666E9 /* PartidasCopaDoBrasil.swift */,
+				C41EE397290C86BC006666E9 /* Chave.swift */,
+				C41EE399290C86EC006666E9 /* Fase.swift */,
+				C41EE39B290C8814006666E9 /* PartidaCompleta.swift */,
+				C41EE39D290C897A006666E9 /* FaseBase.swift */,
+			);
+			path = Models_;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -864,22 +942,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				14ED79A128D0D2EB00B48DEA /* LinesUpsGameScreen.swift in Sources */,
+				C41EE374290C41BB006666E9 /* Tecnico.swift in Sources */,
+				C47041F3290E09E2005F5D7A /* HomeMock.swift in Sources */,
 				14C5C82728B6A61D00300E6D /* HomeViewModel.swift in Sources */,
+				C47041F7290E1548005F5D7A /* FavouriteTeamsMock.swift in Sources */,
 				14D7A5282906D8990097A5AF /* PhaseDetailViewController.swift in Sources */,
+				C41EE376290C4210006666E9 /* Jogador.swift in Sources */,
+				C41EE38E290C8245006666E9 /* Partida.swift in Sources */,
 				142D5E3D28C00452002BA5EC /* GameTableViewController.swift in Sources */,
 				14C5C7EF28B697CC00300E6D /* LoginViewController.swift in Sources */,
 				14C5C82928B6AA2600300E6D /* TabelaService.swift in Sources */,
 				14C23D5528B9309800C34A6E /* TabBarController.swift in Sources */,
 				14ED799F28CFD8FF00B48DEA /* StatisticGameTableViewCell.swift in Sources */,
+				C41EE378290C4280006666E9 /* DetalhesTimePartida.swift in Sources */,
+				C41EE390290C83F8006666E9 /* LinhaTabelaCampeonatoBrasileiro.swift in Sources */,
 				14C23D6328B944C600C34A6E /* HomeScreen.swift in Sources */,
 				14C5C82428B69E7200300E6D /* GerericService.swift in Sources */,
+				C41EE37E290C4370006666E9 /* CartaoCor.swift in Sources */,
+				C41EE394290C8541006666E9 /* PartidaBase.swift in Sources */,
+				C41EE388290C4515006666E9 /* Estatisticas.swift in Sources */,
 				14C5C82B28B6AB1200300E6D /* TabelaBrasileiraoModel.swift in Sources */,
 				144F2B4028D4D310001AE671 /* GameDaysCollectionViewCell.swift in Sources */,
+				C41EE382290C43EB006666E9 /* Finalizacao.swift in Sources */,
 				14C23D6128B9339C00C34A6E /* ProfileViewController.swift in Sources */,
+				C41EE372290C4176006666E9 /* Posicao.swift in Sources */,
 				142D5E4F28C28265002BA5EC /* DetailChampsScreen.swift in Sources */,
-				14D7A51F2905B0310097A5AF /* BrazilsCup.swift in Sources */,
+				C41EE396290C864A006666E9 /* PartidasCopaDoBrasil.swift in Sources */,
 				14C5C7EB28B697CC00300E6D /* AppDelegate.swift in Sources */,
+				C41EE384290C442F006666E9 /* Passes.swift in Sources */,
+				C4EBBFBE290EB32700CE54DC /* MatchDetailsMock.swift in Sources */,
 				142D5E3F28C0046C002BA5EC /* GameTableScreen.swift in Sources */,
+				C41EE392290C84C1006666E9 /* ProximaPartida.swift in Sources */,
 				14C23D5F28B9338B00C34A6E /* GamesViewController.swift in Sources */,
 				14C5C7F528B697CC00300E6D /* TorcedorFC.xcdatamodeld in Sources */,
 				14ED799728CBA67100B48DEA /* CupPhasesTableViewCell.swift in Sources */,
@@ -887,34 +980,44 @@
 				14C23D6A28BA7F6C00C34A6E /* GamesScreen.swift in Sources */,
 				14C23D6628B9555900C34A6E /* ChampionshipsTableViewCell.swift in Sources */,
 				14C5C81F28B698BE00300E6D /* CampeonatoService.swift in Sources */,
-				14D7A5212905B0BF0097A5AF /* Phase.swift in Sources */,
 				14C23D5B28B9336400C34A6E /* TCViewController.swift in Sources */,
+				C41EE38C290C8183006666E9 /* Campeonato.swift in Sources */,
 				14D7A52B2906D8CF0097A5AF /* PhaseDetailScreen.swift in Sources */,
 				14ED799228CADE8E00B48DEA /* CupDetailScreen.swift in Sources */,
 				14C5C7ED28B697CC00300E6D /* SceneDelegate.swift in Sources */,
 				14ED79A328D0D30700B48DEA /* LinesUpsGamesTableViewCell.swift in Sources */,
 				14541CEC290AF75000D329A9 /* Alert.swift in Sources */,
-				14541CE5290AE63F00D329A9 /* GameBrazilsCup.swift in Sources */,
+				C41EE36E290C3D6E006666E9 /* Time.swift in Sources */,
 				14C23D5028B85A4800C34A6E /* ForgotPasswordScreen.swift in Sources */,
 				14E7E7D628E1EDE200CF2F6A /* TeamDetailsTableViewCell.swift in Sources */,
 				142D5E4628C26890002BA5EC /* GamesDetailScreen.swift in Sources */,
 				14D7A52E2906DDBF0097A5AF /* PhaseDetailTableViewCell.swift in Sources */,
 				14D7A5302906DE000097A5AF /* PhaseDetailCellScreen.swift in Sources */,
+				C41EE380290C43B5006666E9 /* Cartoes.swift in Sources */,
 				142D5E4328C039C5002BA5EC /* FaseCopaModel.swift in Sources */,
+				C47041F5290E0BEC005F5D7A /* BrazilCupFaseMock.swift in Sources */,
 				14C23D6C28BAAB3B00C34A6E /* ProfileScreen.swift in Sources */,
+				C41EE370290C3E56006666E9 /* Atleta.swift in Sources */,
+				C41EE37C290C4322006666E9 /* EventoJogador.swift in Sources */,
 				142D5E4828C268AF002BA5EC /* GamesDetailViewController.swift in Sources */,
+				C41EE39C290C8814006666E9 /* PartidaCompleta.swift in Sources */,
+				C40A4FC9290F49E60094FF18 /* MyFavouriteTeamsMock.swift in Sources */,
 				142D5E5228C666ED002BA5EC /* GamesTableViewCellScreen.swift in Sources */,
 				144F2B4228D4D321001AE671 /* GameDaysScreen.swift in Sources */,
+				C41EE39A290C86EC006666E9 /* Fase.swift in Sources */,
 				14E7E7D428E1ED9E00CF2F6A /* TeamDetailsScreen.swift in Sources */,
 				14E6CFF528FE1DDB00F71DD6 /* RedefinePasswordViewController.swift in Sources */,
-				14D7A5262905B70E0097A5AF /* BrazilsCupService.swift in Sources */,
-				14E6D0002900B92F00F71DD6 /* TeamBrazilianTable.swift in Sources */,
+				14D7A5262905B70E0097A5AF /* BrazilCupFasesMock.swift in Sources */,
+				C41EE38A290C8150006666E9 /* Edicao.swift in Sources */,
 				14ED799928CBA69400B48DEA /* CupPhasesScreen.swift in Sources */,
 				14ED799428CAE08200B48DEA /* CupDetailViewController.swift in Sources */,
 				14ED799D28CFD8E500B48DEA /* StatisticsGameScreen.swift in Sources */,
+				C41EE39E290C897A006666E9 /* FaseBase.swift in Sources */,
 				142D5E4D28C28244002BA5EC /* DetailChampsTableViewCell.swift in Sources */,
 				14C23D2F28B7C79A00C34A6E /* LoginScreen.swift in Sources */,
+				C41EE386290C4471006666E9 /* Estatisitica.swift in Sources */,
 				14C23DAF28BD33BE00C34A6E /* TCScreen.swift in Sources */,
+				C41EE37A290C42D6006666E9 /* Escalacoes.swift in Sources */,
 				14C23D5D28B9337100C34A6E /* MyFavoritesViewController.swift in Sources */,
 				14C23D3728B83BD300C34A6E /* RegisterScreen.swift in Sources */,
 				142D5E5428C66756002BA5EC /* GamesTableViewCell.swift in Sources */,
@@ -923,9 +1026,10 @@
 				142D5E4A28C270D5002BA5EC /* FaseService.swift in Sources */,
 				14E6CFF728FE1E2300F71DD6 /* RedefinePasswordScreen.swift in Sources */,
 				14C23D3528B83BB900C34A6E /* RegisterViewController.swift in Sources */,
+				C41EE398290C86BC006666E9 /* Chave.swift in Sources */,
 				14C5C82228B69A8F00300E6D /* ListaDeCampeonatosModel.swift in Sources */,
 				14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */,
-				14D7A5242905B6FD0097A5AF /* BrazilianTableService.swift in Sources */,
+				14D7A5242905B6FD0097A5AF /* BrazilianTableMock.swift in Sources */,
 				142D5E4128C02BF9002BA5EC /* GameTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

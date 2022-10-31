@@ -1,0 +1,58 @@
+Fases Copa do Brasil
+
+GET https://api.api-futebol.com.br/v1/campeonatos/:campeonato_id/fases/:fase_id
+
+Dados necessários:
+
+FaseId
+Nome
+PartidasDaFase
+Data
+Hora
+Placar
+TimeMandante
+Escudo
+TimeVisitante
+Escudo
+
+
+Estrutura retornada pela api contendo apenas os dados necessários para a tela:
+
+{
+	fase_id: int,	
+	nome: string,
+	chaves: [
+		{
+			partida_ida: {
+				partida_id: int,
+				time_mandante: {
+					time_id: int,
+					escudo: string
+				},
+				time_visitante: {
+					time_id: int,
+					escudo: string
+				},
+				placar_mandante: int,
+				placar_visitante: int,
+				data_realizacao: string,
+				hora_realizacao: string
+			},
+			partida_volta: {
+				partida_id: int,
+				time_mandante: {
+					time_id: int,
+					escudo: string
+				},
+				time_visitante: {
+					time_id: int,
+					escudo: string
+				},
+				placar_mandante: int,
+				placar_visitante: int,
+				data_realizacao: string,
+				hora_realizacao: string
+			}
+		}
+	]
+}

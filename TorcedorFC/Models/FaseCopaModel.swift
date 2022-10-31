@@ -8,7 +8,7 @@
 import Foundation
 
     // MARK: - FasesCopaElement
-    struct FasesCopaElement: Codable {
+struct FasesCopaElement: Codable {
         let faseID: Int
         let edicao: Edicao
         let nome, slug, status: String
@@ -30,7 +30,7 @@ import Foundation
     }
 
     // MARK: - Edicao
-    struct Edicao: Codable {
+    struct Edicao1: Codable {
         let edicaoID: Int
         let temporada, nome, nomePopular, slug: String
 
