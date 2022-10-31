@@ -76,6 +76,7 @@
 		16BAC42337476A22179BA314 /* Pods_TorcedorFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B20A53155E3935FB825A21F /* Pods_TorcedorFC.framework */; };
 		49766258DE757AFA377E40EE /* libPods-TorcedorFCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B1F34F58633E020653DCDF /* libPods-TorcedorFCTests.a */; };
 		9B1BC542F6087ED444E1BF44 /* libPods-TorcedorFCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB66E060E82687828CC7B8A /* libPods-TorcedorFCUITests.a */; };
+		C40A4FC9290F49E60094FF18 /* MyFavouriteTeamsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */; };
 		C41EE36E290C3D6E006666E9 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE36D290C3D6E006666E9 /* Time.swift */; };
 		C41EE370290C3E56006666E9 /* Atleta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE36F290C3E56006666E9 /* Atleta.swift */; };
 		C41EE372290C4176006666E9 /* Posicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EE371290C4176006666E9 /* Posicao.swift */; };
@@ -202,6 +203,7 @@
 		7A0C97A4ECFA85F4E7789223 /* Pods-TorcedorFCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCUITests.release.xcconfig"; path = "Target Support Files/Pods-TorcedorFCUITests/Pods-TorcedorFCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F72A39515A6AF361E031164 /* Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TorcedorFC-TorcedorFCUITests/Pods-TorcedorFC-TorcedorFCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9136363A340EDAA84F310175 /* Pods-TorcedorFCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TorcedorFCTests.release.xcconfig"; path = "Target Support Files/Pods-TorcedorFCTests/Pods-TorcedorFCTests.release.xcconfig"; sourceTree = "<group>"; };
+		C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavouriteTeamsMock.swift; sourceTree = "<group>"; };
 		C41EE36D290C3D6E006666E9 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		C41EE36F290C3E56006666E9 /* Atleta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atleta.swift; sourceTree = "<group>"; };
 		C41EE371290C4176006666E9 /* Posicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posicao.swift; sourceTree = "<group>"; };
@@ -581,6 +583,7 @@
 				C47041F4290E0BEC005F5D7A /* BrazilCupFaseMock.swift */,
 				C47041F6290E1548005F5D7A /* FavouriteTeamsMock.swift */,
 				C4EBBFBD290EB32700CE54DC /* MatchDetailsMock.swift */,
+				C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */,
 			);
 			path = ServiceMock;
 			sourceTree = "<group>";
@@ -998,6 +1001,7 @@
 				C41EE37C290C4322006666E9 /* EventoJogador.swift in Sources */,
 				142D5E4828C268AF002BA5EC /* GamesDetailViewController.swift in Sources */,
 				C41EE39C290C8814006666E9 /* PartidaCompleta.swift in Sources */,
+				C40A4FC9290F49E60094FF18 /* MyFavouriteTeamsMock.swift in Sources */,
 				142D5E5228C666ED002BA5EC /* GamesTableViewCellScreen.swift in Sources */,
 				144F2B4228D4D321001AE671 /* GameDaysScreen.swift in Sources */,
 				C41EE39A290C86EC006666E9 /* Fase.swift in Sources */,
