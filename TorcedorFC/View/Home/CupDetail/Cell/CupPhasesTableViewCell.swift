@@ -28,6 +28,10 @@ class CupPhasesTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.detailCupPhasesView)
     }
     
+    public func setUpCell(data: FaseBase) {
+        detailCupPhasesView.phaseLabel.text = data.nome
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

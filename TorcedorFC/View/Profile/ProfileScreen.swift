@@ -9,6 +9,7 @@ import UIKit
 
 protocol ProfileScreenProtocol: AnyObject {
     func actionRedefinePasswordButton()
+    func actionExitButton()
 }
 
 class ProfileScreen: UIView {
@@ -110,7 +111,7 @@ class ProfileScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0)
-        // button.addTarget(self, action: #selector(self.tappedForgotPasswordButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.tappedExitButton), for: .touchUpInside)
         return button
     }()
     
@@ -148,6 +149,10 @@ class ProfileScreen: UIView {
     
     @objc private func tappedRedefinePasswordButton() {
         delegate?.actionRedefinePasswordButton()
+    }
+    
+    @objc private func tappedExitButton() {
+        delegate?.actionExitButton()
     }
     
     required init?(coder: NSCoder) {

@@ -85,7 +85,7 @@ class GamesTableViewCellScreen: UIView {
     private func configNameChampsLabel() {
         self.nameChampsLabel.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(5)
-            make.leading.trailing.equalTo(20)
+            make.centerX.equalToSuperview()
         }
     }
     
@@ -115,7 +115,7 @@ class GamesTableViewCellScreen: UIView {
     private func configStatusLabel() {
         self.statusLabel.snp.makeConstraints { make in
             make.top.equalTo(self.visitingTeamImageView.snp.bottom).offset(20)
-            make.trailing.equalToSuperview().inset(15)
+            make.centerX.equalToSuperview()
         }
     }
 }

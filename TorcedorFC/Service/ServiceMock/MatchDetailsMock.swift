@@ -651,6 +651,8 @@ class MatchDetailsMock {
             timeId: 1,
             nomePopular: "Palmeiras",
             escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
-        )
+        ),
+        dataRealizacao: "Torcedor Teste 01",
+        horaRealizacao: "Torcedor Teste 02"
     )
 }

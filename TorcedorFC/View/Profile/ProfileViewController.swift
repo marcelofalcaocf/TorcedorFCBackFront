@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
 
 class ProfileViewController: UIViewController {
 
@@ -23,6 +25,18 @@ class ProfileViewController: UIViewController {
 }
 
 extension ProfileViewController: ProfileScreenProtocol {
+    func actionExitButton() {
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                let loginViewController: LoginViewController = LoginViewController()
+
+                navigationController?.pushViewController(loginViewController, animated: false)
+            } catch let signOutError as NSError {
+                print("Error signing out: %@", signOutError)
+            }
+    }
+    
     func actionRedefinePasswordButton() {
         let vc: RedefinePasswordViewController = RedefinePasswordViewController()
         

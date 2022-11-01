@@ -54,15 +54,15 @@ extension GameTableViewController: UITableViewDelegate {
 
 extension GameTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return viewModel.countTableView()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: DetailChampsTableViewCell.identifier, for: indexPath) as? DetailChampsTableViewCell {
+            
+            cell.setUpCell(data: viewModel.tableMock[indexPath.row])
             return cell
         }
         return UITableViewCell()
     }
-    
-    
 }

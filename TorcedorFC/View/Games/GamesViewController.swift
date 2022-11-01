@@ -20,7 +20,7 @@ class GamesViewController: UIViewController {
         super.viewDidLoad()
        // self.title = "Games"
         gamesScreen.configTableViewProtocols(delegate: self, dataSource: self)
-        gamesScreen.configCollectionViewProtocols(delegate: self, dataSource: self)
+       // gamesScreen.configCollectionViewProtocols(delegate: self, dataSource: self)
     }
 }
 
@@ -48,23 +48,23 @@ extension GamesViewController: UITableViewDataSource {
     }
 }
 
-extension GamesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GameDaysCollectionViewCell.identifier, for: indexPath) as? GameDaysCollectionViewCell {
-           return cell
-        }
-        return UICollectionViewCell()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 125, height: 80)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selecionado")
-    }
-}
+//extension GamesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 3
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GameDaysCollectionViewCell.identifier, for: indexPath) as? GameDaysCollectionViewCell {
+//           return cell
+//        }
+//        return UICollectionViewCell()
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: 125, height: 80)
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print("selecionado")
+//    }
+//}

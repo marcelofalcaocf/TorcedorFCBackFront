@@ -29,7 +29,7 @@ class ChampionshipsTableViewCell: UITableViewCell {
     }
     
     public func setUpCell(data: Campeonato) {
-        guard let url = URL(string: data.logo) else { return }
+        guard let url = URL(string: data.logo!) else { return }
         self.championshipsView.champImageView.kf.setImage(with: url)
     }
     

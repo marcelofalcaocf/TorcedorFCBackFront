@@ -14,7 +14,7 @@ class PartidaCompleta : Partida {
     var cartoes: Cartoes
     var escalacoes: Escalacoes
     
-    init(status: String, estatisticas: Estatisticas, cartoes: Cartoes, escalacoes: Escalacoes, placarMandante: Int, placarVisitante: Int, partidaId: Int, campeonato: Campeonato, timeMandante: Time, timeVisitante: Time) {
+    init(status: String, estatisticas: Estatisticas, cartoes: Cartoes, escalacoes: Escalacoes, placarMandante: Int, placarVisitante: Int, partidaId: Int, campeonato: Campeonato, timeMandante: Time, timeVisitante: Time, dataRealizacao: String, horaRealizacao: String) {
         self.status = status
         self.estatisticas = estatisticas
         self.cartoes = cartoes
@@ -25,7 +25,9 @@ class PartidaCompleta : Partida {
             partidaId: partidaId,
             campeonato: campeonato,
             timeMandante: timeMandante,
-            timeVisitante: timeVisitante
+            timeVisitante: timeVisitante,
+            dataRealizacao: dataRealizacao,
+            horaRealizacao: horaRealizacao
         )
     }
     

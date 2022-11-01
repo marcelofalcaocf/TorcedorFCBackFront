@@ -18,6 +18,9 @@ class GameTableViewModel {
     private let tabelaService: TabelaService = .init()
     var tabela: [TabelaBrasileiraoElement] = []
     
+    var tableMock = BrazilianTableMock().brazilianTableData
+    var phaseBrazilCupMock = BrazilCupFasesMock().fases
+    
     private var faseService: FaseService = .init()
     var fase: [FasesCopaElement] = []
     
@@ -49,5 +52,20 @@ class GameTableViewModel {
         default:
             break
         }
+    }
+    
+    func countTableView() -> Int {
+        return tableMock.count
+    }
+    
+//    public func getCellViewModel(position: Int) -> DetailChampsTableViewCell {
+//        let game = tableMock[position]
+//        let cell = DetailChampsTableViewCell()
+//        cell.setUpCell(data: game)
+//        return cell
+//    }
+    
+    func countCupTableView() -> Int {
+        return phaseBrazilCupMock.count
     }
 }

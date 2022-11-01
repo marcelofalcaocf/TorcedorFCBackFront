@@ -27,6 +27,19 @@ class DetailChampsTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.detailChampsView)
     }
     
+    public func setUpCell(data: LinhaTabelaCampeonatoBrasileiro) {
+        guard let url = URL(string: data.time.escudo) else { return }
+        
+        self.detailChampsView.teamImageView.kf.setImage(with: url)
+        detailChampsView.teamLabel.text = data.time.nomePopular
+        detailChampsView.positionLabel.text = String(data.posicao)
+        detailChampsView.spotsLabel.text = String(data.pontos)
+        detailChampsView.numberOfGamesLabel.text = String(data.jogos)
+        detailChampsView.victoriesLabel.text = String(data.vitorias)
+        detailChampsView.drawsLabel.text = String(data.empates)
+        detailChampsView.defeatsLabel.text = String(data.derrotas)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

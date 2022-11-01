@@ -21,7 +21,7 @@ class DetailChampsScreen: UIView {
     lazy var teamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+        // image.backgroundColor = .gray
         image.layer.cornerRadius = 11
         image.contentMode = .scaleAspectFit
         return image

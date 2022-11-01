@@ -10,6 +10,8 @@ import UIKit
 class PhaseDetailViewController: UIViewController {
 
     var phaseDetailScreen: PhaseDetailScreen = .init()
+    var viewModel = PhaseDetailViewModel()
+    
     
     override func loadView() {
         self.phaseDetailScreen = PhaseDetailScreen()
@@ -19,7 +21,8 @@ class PhaseDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         phaseDetailScreen.configTableViewProtocols(delegate: self, dataSource: self)
-
+        viewModel.gettingPhase()
+        phaseDetailScreen.cupLabel.text = viewModel.detailFase.nome
     }
 }
 
@@ -31,11 +34,12 @@ extension PhaseDetailViewController: UITableViewDelegate {
 
 extension PhaseDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return viewModel.configCountTableView()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: PhaseDetailTableViewCell.identifier, for: indexPath) as? PhaseDetailTableViewCell {
+            cell.createView(data: viewModel.detailFase.chaves[indexPath.row])
             return cell
         }
         return UITableViewCell()

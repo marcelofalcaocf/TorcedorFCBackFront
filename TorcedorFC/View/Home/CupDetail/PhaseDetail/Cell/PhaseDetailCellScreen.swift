@@ -22,7 +22,7 @@ class PhaseDetailCellScreen: UIView {
     lazy var homeTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+        // image.backgroundColor = .gray
         // image.layer.cornerRadius = 11
         image.contentMode = .scaleAspectFit
         return image
@@ -41,7 +41,7 @@ class PhaseDetailCellScreen: UIView {
     lazy var visitorTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+        // image.backgroundColor = .gray
         // image.layer.cornerRadius = 11
         image.contentMode = .scaleAspectFit
         return image

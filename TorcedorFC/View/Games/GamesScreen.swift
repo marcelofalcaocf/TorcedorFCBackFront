@@ -29,22 +29,22 @@ class GamesScreen: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0)
         label.font = UIFont.boldSystemFont(ofSize: 32)
-        label.text = "Jogos:"
+        label.text = "Jogos ao vivo:"
         return label
     }()
     
-    lazy var daysCollectionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .gray
-        collectionView.delaysContentTouches = false
-        collectionView.register(GameDaysCollectionViewCell.self, forCellWithReuseIdentifier: GameDaysCollectionViewCell.identifier)
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
-        layout.scrollDirection = .horizontal
-        collectionView.setCollectionViewLayout(layout, animated: false)
-        return collectionView
-    }()
+//    lazy var daysCollectionView: UICollectionView = {
+//        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
+//        collectionView.translatesAutoresizingMaskIntoConstraints = false
+//        collectionView.showsHorizontalScrollIndicator = false
+//        collectionView.backgroundColor = .gray
+//        collectionView.delaysContentTouches = false
+//        collectionView.register(GameDaysCollectionViewCell.self, forCellWithReuseIdentifier: GameDaysCollectionViewCell.identifier)
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+//        layout.scrollDirection = .horizontal
+//        collectionView.setCollectionViewLayout(layout, animated: false)
+//        return collectionView
+//    }()
     
     lazy var gamesTableView: UITableView = {
         let tableView = UITableView()
@@ -63,7 +63,7 @@ class GamesScreen: UIView {
         self.configBackgrondOnTop()
         self.configLogoAppImageView()
         self.configGamesLabel()
-        self.configDaysCollectionView()
+        // self.configDaysCollectionView()
         self.configGamesTableView()
     }
     
@@ -76,16 +76,16 @@ class GamesScreen: UIView {
         self.gamesTableView.dataSource = dataSource
     }
     
-    public func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
-        self.daysCollectionView.delegate = delegate
-        self.daysCollectionView.dataSource = dataSource
-    }
+//    public func configCollectionViewProtocols(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
+//        self.daysCollectionView.delegate = delegate
+//        self.daysCollectionView.dataSource = dataSource
+//    }
     
     func configSuperView() {
         self.addSubview(backgrondOnTop)
         self.backgrondOnTop.addSubview(logoAppImageView)
         self.backgrondOnTop.addSubview(gamesLabel)
-        self.addSubview(daysCollectionView)
+        // self.addSubview(daysCollectionView)
         self.addSubview(gamesTableView)
     }
     
@@ -105,7 +105,7 @@ class GamesScreen: UIView {
         self.logoAppImageView.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top)
             make.trailing.equalToSuperview()
-            make.height.width.equalTo(100)
+            make.height.width.equalTo(90)
         }
     }
     
@@ -117,17 +117,17 @@ class GamesScreen: UIView {
         }
     }
     
-    func configDaysCollectionView() {
-        self.daysCollectionView.snp.makeConstraints { make in
-            make.top.equalTo(self.backgrondOnTop.snp.bottom)
-            make.leading.trailing.equalToSuperview()
-            make.height.equalTo(90)
-        }
-    }
+//    func configDaysCollectionView() {
+//        self.daysCollectionView.snp.makeConstraints { make in
+//            make.top.equalTo(self.backgrondOnTop.snp.bottom)
+//            make.leading.trailing.equalToSuperview()
+//            make.height.equalTo(90)
+//        }
+//    }
     
     func configGamesTableView() {
         self.gamesTableView.snp.makeConstraints { make in
-            make.top.equalTo(self.daysCollectionView.snp.bottom).offset(15)
+            make.top.equalTo(self.gamesLabel.snp.bottom).offset(15)
             make.leading.equalToSuperview().offset(10)
             make.trailing.equalToSuperview().inset(10)
             make.bottom.equalToSuperview().inset(15)

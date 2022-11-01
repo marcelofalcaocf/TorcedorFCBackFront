@@ -35,6 +35,7 @@ extension CupDetailViewController: CupDetailScreenProtocol {
 extension CupDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc: PhaseDetailViewController = PhaseDetailViewController()
+        vc.viewModel.position = indexPath.row + 1
         present(vc, animated: true)
     }
     
@@ -45,11 +46,12 @@ extension CupDetailViewController: UITableViewDelegate {
 
 extension CupDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return viewModel.countCupTableView()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: CupPhasesTableViewCell.identifier, for: indexPath) as? CupPhasesTableViewCell {
+            cell.setUpCell(data: viewModel.phaseBrazilCupMock[indexPath.row])
             return cell
         }
         return UITableViewCell()
