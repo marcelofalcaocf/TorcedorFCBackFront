@@ -11,6 +11,7 @@ class GamesDetailViewController: UIViewController {
     
     
     var gamesDetailScreen: GamesDetailScreen = .init()
+    var viewModel: GamesDetailViewModel = .init()
     
     override func loadView() {
         self.gamesDetailScreen = GamesDetailScreen()
@@ -21,6 +22,21 @@ class GamesDetailViewController: UIViewController {
         super.viewDidLoad()
         gamesDetailScreen.delegate(delegate: self)
         gamesDetailScreen.configTableViewProtocols(dataSource: self, delegate: self)
+        
+        configView()
+    }
+    
+    func configView() {
+        gamesDetailScreen.homeTeamLabel.text = viewModel.gamesDetail.timeMandante.nomePopular
+        gamesDetailScreen.visitingTeamLabel.text = viewModel.gamesDetail.timeVisitante.nomePopular
+        gamesDetailScreen.scoreboardLabel.text = "\(viewModel.gamesDetail.placarMandante) x \(viewModel.gamesDetail.placarVisitante)"
+        
+        guard let url = URL(string: viewModel.gamesDetail.timeMandante.escudo),
+              let urlVisiting = URL(string: viewModel.gamesDetail.timeVisitante.escudo)
+        else { return }
+        
+        gamesDetailScreen.homeTeamImageView.kf.setImage(with: url)
+        gamesDetailScreen.visitingTeamImageView.kf.setImage(with: urlVisiting)
     }
 }
 
@@ -52,9 +68,9 @@ extension GamesDetailViewController: UITableViewDelegate {
 extension GamesDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if gamesDetailScreen.segmentedControl.selectedSegmentIndex == 0 {
-            return 11
+            return viewModel.countCellStatistics()
         } else {
-            return 2
+            return viewModel.countCellLinesUps()
         }
     }
     
@@ -63,10 +79,12 @@ extension GamesDetailViewController: UITableViewDataSource {
         switch gamesDetailScreen.segmentedControl.selectedSegmentIndex {
         case 0:
         if let cell = tableView.dequeueReusableCell(withIdentifier: StatisticGameTableViewCell.identifier, for: indexPath) as? StatisticGameTableViewCell {
+            cell.setUpCell(data: viewModel.gamesDetail.estatisticas, indexPath: indexPath.row)
         return cell
         }
         case 1:
         if let cell = tableView.dequeueReusableCell(withIdentifier: LinesUpsGamesTableViewCell.identifier, for: indexPath) as? LinesUpsGamesTableViewCell {
+            cell.setUpCell(data: viewModel.gamesDetail, indexPath: indexPath.row)
         return cell
         }
         default:

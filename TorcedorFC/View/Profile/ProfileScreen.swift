@@ -48,7 +48,7 @@ class ProfileScreen: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0)
-        label.font = UIFont.boldSystemFont(ofSize: 32)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.text = "Marcelo Falcão"
         return label

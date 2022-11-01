@@ -37,19 +37,10 @@ class GamesDetailScreen: UIView {
         return button
     }()
     
-    lazy var statusLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.text = "Status: Finalizado"
-        return label
-    }()
-    
     lazy var homeTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+//        image.backgroundColor = .gray
         image.layer.cornerRadius = 30
         image.contentMode = .scaleAspectFit
         return image
@@ -67,7 +58,7 @@ class GamesDetailScreen: UIView {
     lazy var visitingTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+//        image.backgroundColor = .gray
         image.layer.cornerRadius = 30
         image.contentMode = .scaleAspectFit
         return image
@@ -117,7 +108,6 @@ class GamesDetailScreen: UIView {
         
         self.configBackgrondOnTop()
         self.configBackAppButton()
-        self.configStatusLabel()
         self.configHomeTeamImageView()
         self.configHomeTeamLabel()
         self.configVisitingTeamImageView()
@@ -134,7 +124,6 @@ class GamesDetailScreen: UIView {
     func configSuperView() {
         self.addSubview(backgrondOnTop)
         self.backgrondOnTop.addSubview(backAppButton)
-        self.backgrondOnTop.addSubview(statusLabel)
         self.backgrondOnTop.addSubview(homeTeamImageView)
         self.backgrondOnTop.addSubview(homeTeamLabel)
         self.backgrondOnTop.addSubview(visitingTeamImageView)
@@ -175,14 +164,6 @@ class GamesDetailScreen: UIView {
             make.top.equalToSuperview().offset(40)
             make.leading.equalToSuperview().offset(10)
             make.height.width.equalTo(20)
-        }
-    }
-    
-    private func configStatusLabel() {
-        self.statusLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(30)
-            make.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(45)
         }
     }
     

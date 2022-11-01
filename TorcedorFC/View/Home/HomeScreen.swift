@@ -29,7 +29,7 @@ class HomeScreen: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor(red: 32/255, green: 43/255, blue: 59/255, alpha: 1.0)
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.text = "Bem vindo Marcelo!"
+        label.text = "Bem vindo!"
         return label
     }()
     

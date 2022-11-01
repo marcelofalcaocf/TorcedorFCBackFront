@@ -158,11 +158,12 @@ class RegisterScreen: UIView {
     }
     
     public func validaTextFields() {
+        let name: String = nameTextField.text ?? ""
         let email: String = self.emailTextField.text ?? "" // sao opcionais
         let password: String = self.passwordTextField.text ?? "" // sao opcionais
         let confirmPassword: String = self.confirmPasswordTextField.text ?? ""
         
-        if email != "" && password != "" && confirmPassword == password { // poderia colocar "if !email.isEmpty && !password.isEmpty {}
+        if name != "" && email != "" && password != "" && confirmPassword == password { // poderia colocar "if !email.isEmpty && !password.isEmpty {}
             self.configButtonEnabel(true)
         } else {
             self.configButtonEnabel(false)

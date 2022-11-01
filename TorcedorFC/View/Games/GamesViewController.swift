@@ -10,6 +10,7 @@ import UIKit
 class GamesViewController: UIViewController {
 
     var gamesScreen: GamesScreen = .init()
+    var viewModel: GamesViewModel = .init()
     
     override func loadView() {
         self.gamesScreen = GamesScreen()
@@ -37,11 +38,12 @@ extension GamesViewController: UITableViewDelegate {
 
 extension GamesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.countTableView()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: GamesTableViewCell.identifier, for: indexPath) as? GamesTableViewCell {
+            cell.setUpCell(data: viewModel.configTableView(indexPath: indexPath.row))
             return cell
         }
         return UITableViewCell()

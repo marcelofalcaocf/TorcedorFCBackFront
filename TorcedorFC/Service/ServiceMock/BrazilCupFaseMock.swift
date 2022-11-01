@@ -28,9 +28,9 @@ class BrazilCupFaseMock {
                         escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
                     ),
                     timeVisitante: Time(
-                        timeId: 2,
-                        nomePopular: "Internacional",
-                        escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"
+                        timeId: 8,
+                        nomePopular: "América-MG",
+                        escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/ZFsHqGsKNQPlCQjZ4Lu-EQ_48x48.png"
                     ),
                     dataRealizacao: "07/10/2022",
                     horaRealizacao: "19:00"

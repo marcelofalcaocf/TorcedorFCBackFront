@@ -21,7 +21,7 @@ class GamesTableViewCellScreen: UIView {
     lazy var homeTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+//        image.backgroundColor = .gray
         image.layer.cornerRadius = 50
         image.contentMode = .scaleAspectFit
         return image
@@ -30,7 +30,7 @@ class GamesTableViewCellScreen: UIView {
     lazy var visitingTeamImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.backgroundColor = .gray
+//        image.backgroundColor = .gray
         image.layer.cornerRadius = 50
         image.contentMode = .scaleAspectFit
         return image

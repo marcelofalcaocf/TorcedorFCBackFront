@@ -643,9 +643,9 @@ class MatchDetailsMock {
             nome: "Campeonato Brasileiro"
         ),
         timeMandante: Time(
-            timeId: 2,
-            nomePopular: "Internacional",
-            escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"
+            timeId: 5,
+            nomePopular: "Fluminense",
+            escudo: "https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png"
         ),
         timeVisitante: Time(
             timeId: 1,

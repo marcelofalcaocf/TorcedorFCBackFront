@@ -13,4 +13,6 @@ struct Person {
     var email: String
     var photo: UIImage?
     var heartTeam: String?
+    
+    // static var people: [Person] = Person(name: <#T##String#>, email: <#T##String#>)
 }
