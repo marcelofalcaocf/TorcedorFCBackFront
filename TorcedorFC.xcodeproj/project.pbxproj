@@ -23,6 +23,8 @@
 		14541CE7290AF34600D329A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14541CE6290AF34500D329A9 /* GoogleService-Info.plist */; };
 		14541CEC290AF75000D329A9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14541CEB290AF75000D329A9 /* Alert.swift */; };
 		14A5FE892910B9FD007B52C0 /* PhaseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FE882910B9FD007B52C0 /* PhaseDetailViewModel.swift */; };
+		14A5FEAD29118EB2007B52C0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FEAC29118EB2007B52C0 /* Person.swift */; };
+		14A5FEAF29118F64007B52C0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FEAE29118F64007B52C0 /* ProfileViewModel.swift */; };
 		14C23D2F28B7C79A00C34A6E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */; };
 		14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3128B823DF00C34A6E /* HomeViewController.swift */; };
 		14C23D3528B83BB900C34A6E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3428B83BB900C34A6E /* RegisterViewController.swift */; };
@@ -144,6 +146,8 @@
 		14541CE6290AF34500D329A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14541CEB290AF75000D329A9 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		14A5FE882910B9FD007B52C0 /* PhaseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewModel.swift; sourceTree = "<group>"; };
+		14A5FEAC29118EB2007B52C0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		14A5FEAE29118F64007B52C0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		14C23D3128B823DF00C34A6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C23D3428B83BB900C34A6E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -371,6 +375,7 @@
 		146D8B8D28DA247100C292C7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				14A5FEAE29118F64007B52C0 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				14C5C82128B69A8F00300E6D /* ListaDeCampeonatosModel.swift */,
 				14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */,
 				142D5E4228C039C5002BA5EC /* FaseCopaModel.swift */,
+				14A5FEAC29118EB2007B52C0 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -964,6 +970,7 @@
 				142D5E3D28C00452002BA5EC /* GameTableViewController.swift in Sources */,
 				14C5C7EF28B697CC00300E6D /* LoginViewController.swift in Sources */,
 				14C5C82928B6AA2600300E6D /* TabelaService.swift in Sources */,
+				14A5FEAF29118F64007B52C0 /* ProfileViewModel.swift in Sources */,
 				14C23D5528B9309800C34A6E /* TabBarController.swift in Sources */,
 				14ED799F28CFD8FF00B48DEA /* StatisticGameTableViewCell.swift in Sources */,
 				C41EE378290C4280006666E9 /* DetalhesTimePartida.swift in Sources */,
@@ -1030,6 +1037,7 @@
 				C41EE386290C4471006666E9 /* Estatisitica.swift in Sources */,
 				14C23DAF28BD33BE00C34A6E /* TCScreen.swift in Sources */,
 				C41EE37A290C42D6006666E9 /* Escalacoes.swift in Sources */,
+				14A5FEAD29118EB2007B52C0 /* Person.swift in Sources */,
 				14C23D5D28B9337100C34A6E /* MyFavoritesViewController.swift in Sources */,
 				14C23D3728B83BD300C34A6E /* RegisterScreen.swift in Sources */,
 				142D5E5428C66756002BA5EC /* GamesTableViewCell.swift in Sources */,
