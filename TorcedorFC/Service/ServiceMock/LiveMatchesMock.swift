@@ -4,7 +4,6 @@
 //
 //  Created by Tiago & Karina on 01/11/22.
 //
-
 import Foundation
 
 class LiveMatchesMock{

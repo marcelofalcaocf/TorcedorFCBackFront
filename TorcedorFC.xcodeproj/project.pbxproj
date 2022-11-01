@@ -25,6 +25,7 @@
 		14A5FE892910B9FD007B52C0 /* PhaseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FE882910B9FD007B52C0 /* PhaseDetailViewModel.swift */; };
 		14A5FEAD29118EB2007B52C0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FEAC29118EB2007B52C0 /* Person.swift */; };
 		14A5FEAF29118F64007B52C0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FEAE29118F64007B52C0 /* ProfileViewModel.swift */; };
+		14A5FEB1291195EC007B52C0 /* LiveMatchesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A5FEB0291195EC007B52C0 /* LiveMatchesMock.swift */; };
 		14C23D2F28B7C79A00C34A6E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */; };
 		14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3128B823DF00C34A6E /* HomeViewController.swift */; };
 		14C23D3528B83BB900C34A6E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C23D3428B83BB900C34A6E /* RegisterViewController.swift */; };
@@ -148,6 +149,7 @@
 		14A5FE882910B9FD007B52C0 /* PhaseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseDetailViewModel.swift; sourceTree = "<group>"; };
 		14A5FEAC29118EB2007B52C0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		14A5FEAE29118F64007B52C0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		14A5FEB0291195EC007B52C0 /* LiveMatchesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchesMock.swift; sourceTree = "<group>"; };
 		14C23D2E28B7C79A00C34A6E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		14C23D3128B823DF00C34A6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C23D3428B83BB900C34A6E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 				C47041F6290E1548005F5D7A /* FavouriteTeamsMock.swift */,
 				C4EBBFBD290EB32700CE54DC /* MatchDetailsMock.swift */,
 				C40A4FC8290F49E50094FF18 /* MyFavouriteTeamsMock.swift */,
+				14A5FEB0291195EC007B52C0 /* LiveMatchesMock.swift */,
 			);
 			path = ServiceMock;
 			sourceTree = "<group>";
@@ -1049,6 +1052,7 @@
 				C41EE398290C86BC006666E9 /* Chave.swift in Sources */,
 				14C5C82228B69A8F00300E6D /* ListaDeCampeonatosModel.swift in Sources */,
 				14C23D3228B823DF00C34A6E /* HomeViewController.swift in Sources */,
+				14A5FEB1291195EC007B52C0 /* LiveMatchesMock.swift in Sources */,
 				14D7A5242905B6FD0097A5AF /* BrazilianTableMock.swift in Sources */,
 				142D5E4128C02BF9002BA5EC /* GameTableViewModel.swift in Sources */,
 			);
