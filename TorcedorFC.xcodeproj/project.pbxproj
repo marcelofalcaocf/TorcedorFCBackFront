@@ -578,7 +578,7 @@
 		14C5C82028B69A7500300E6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C41EE36C290C3CC1006666E9 /* Models_ */,
+				C41EE36C290C3CC1006666E9 /* ModelsMock */,
 				14C5C82128B69A8F00300E6D /* ListaDeCampeonatosModel.swift */,
 				14C5C82A28B6AB1200300E6D /* TabelaBrasileiraoModel.swift */,
 				142D5E4228C039C5002BA5EC /* FaseCopaModel.swift */,
@@ -714,7 +714,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C41EE36C290C3CC1006666E9 /* Models_ */ = {
+		C41EE36C290C3CC1006666E9 /* ModelsMock */ = {
 			isa = PBXGroup;
 			children = (
 				C41EE36D290C3D6E006666E9 /* Time.swift */,
@@ -743,7 +743,7 @@
 				C41EE39B290C8814006666E9 /* PartidaCompleta.swift */,
 				C41EE39D290C897A006666E9 /* FaseBase.swift */,
 			);
-			path = Models_;
+			path = ModelsMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

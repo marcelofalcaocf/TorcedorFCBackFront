@@ -33,6 +33,7 @@ class LinesUpsGamesTableViewCell: UITableViewCell {
             detailStatisticView.coachLabel.text = data.escalacoes.mandante.tecnico.nomePopular
             guard let url = URL(string: data.timeMandante.escudo) else { return }
             detailStatisticView.teamImageView.kf.setImage(with: url)
+            detailStatisticView.tacticalSchemeImageView.image = UIImage(named: "esquema451")
             //detailStatisticView.linesUpLabel.text = data.escalacoes.mandante.titulares.lazy.joined(separator:  "-")
             //let string = data.escalacoes.mandante.titulares.lazy.joined()
             
